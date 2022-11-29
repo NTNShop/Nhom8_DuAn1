@@ -88,7 +88,7 @@
         </div>
         <!--/.row-->
         <div id="toolbar" class="btn-group">
-            <a href="add_product.php" class="btn btn-success">
+            <a href="?san-pham" class="btn btn-success">
                 <i class="glyphicon glyphicon-plus"></i> Thêm sản phẩm
             </a>
         </div>

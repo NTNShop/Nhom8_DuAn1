@@ -1,113 +1,69 @@
-<!DOCTYPE html>
-<html>
+<?php
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EduBook add-product</title>
+require_once "../dao/hang-hoa.php";
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/datepicker3.css" rel="stylesheet">
-    <link href="css/bootstrap-table.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
 
-    <!--Icons-->
-    <script src="js/lumino.glyphs.js"></script>
+extract($_REQUEST);
 
-    <!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<![endif]-->
 
-</head>
+if (exist_param("btn_insert")) {
+    try {
+        $ten_hh = $_POST['ten_hh'];
+        $don_gia = $_POST['don_gia'];
+        $giam_gia = isset($_POST['giam_gia']) ? $_POST['giam_gia'] : null;
+        $up_hinh = save_file("hinh", "$IMAGE_DIR/products/");
+        $hinh = strlen(".$up_hinh.") > 0 ? $up_hinh : 'product.png';
+        $mo_ta = $_POST['mo_ta'];
+        $dac_biet = $_POST['dac_biet'];
+        $so_luot_xem = $_POST['so_luot_xem'];
+        $ma_loai = $_POST['loai_hang'];
+        $ngay_nhap = $_POST['ngay_nhap'];
+        hang_hoa_insert($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
+        unset($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
+        $MESSAGE = "Thêm mới thành công!";
+    } catch (Exception $exc) {
+        $MESSAGE = "Thêm mới thất bại!";
+    }
+    $VIEW_NAME = "san-pham/add.php";
+} else if (exist_param("btn_update")) {
+    try {
+        $ma_hh = $_POST['ma_hh'];
+        $ten_hh = $_POST['ten_hh'];
+        $don_gia = $_POST['don_gia'];
+        $giam_gia = isset($_POST['giam_gia']) ? $_POST['giam_gia'] : null;
+        $up_hinh = save_file("up_hinh", "$IMAGE_DIR/products/");
+        $hinh = strlen(".$up_hinh.") > 0 ? $up_hinh : $hinh;
+        $mo_ta = $_POST['mo_ta'];
+        $dac_biet = $_POST['dac_biet'];
+        $so_luot_xem = $_POST['so_luot_xem'];
+        $ma_loai = $_POST['loai_hang'];
+        $ngay_nhap = $_POST['ngay_nhap'];
+        hang_hoa_update($ma_hh, $ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
+        $MESSAGE = "Cập nhật thành công!";
+    } catch (Exception $exc) {
+        $MESSAGE = "Cập nhật thất bại!";
+    }
+    $VIEW_NAME = "san-pham/list.php";
+} else if (exist_param("btn_delete")) {
+    try {
+        $ma_hh = $_GET['ma_hh'];
+        hang_hoa_delete($ma_hh);
+        $items = hang_hoa_select_all();
+        $MESSAGE = "Xóa thành công!";
+    } catch (Exception $exc) {
+        $MESSAGE = "Xóa thất bại!";
+    }
+    $VIEW_NAME = "san-pham/list.php";
+} else if (exist_param("btn_edit")) {
+    $ma_hh = $_GET['ma_hh'];
+    $item = hang_hoa_select_by_id($ma_hh);
+    extract($item);
+    $VIEW_NAME = "san-pham/edit.php";
+} else if (exist_param("btn_list")) {
+    $items = hang_hoa_select_all();
+    $VIEW_NAME = "san-pham/list.php";
+} else {
+    $VIEW_NAME = "san-pham/add.php";
+}
 
-<body>
-    <!--/.sidebar-->
-
-    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
-        <div class="row">
-            <ol class="breadcrumb">
-                <li><a href="#"><svg class="glyph stroked home">
-                            <use xlink:href="#stroked-home"></use>
-                        </svg></a></li>
-                <li><a href="">Quản lý sản phẩm</a></li>
-                <li class="active">Thêm sản phẩm</li>
-            </ol>
-        </div>
-        <!--/.row-->
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Thêm sản phẩm</h1>
-            </div>
-        </div>
-        <!--/.row-->
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="col-md-6">
-                            <form role="form" method="post" enctype="multipart/form-data">
-                                <div class="form-group">
-                                    <label>Tên sản phẩm</label>
-                                    <input required name="prd_name" class="form-control" placeholder="">
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Giá sản phẩm</label>
-                                    <input required name="prd_price" type="number" min="0" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>Khuyến mãi</label>
-                                    <input required name="prd_promotion" type="number" min="0" class="form-control">
-                                </div>
-
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Ảnh sản phẩm</label>
-
-                                <input required name="prd_image" type="file">
-                                <br>
-                                <div>
-                                    <img style="filter: drop-shadow(0 0 5px rgb(119, 119, 145));" width="80px" src="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Danh mục</label>
-                                <select name="cat_id" class="form-control">
-                                    <option value=1>Sách Tiếng Việt</option>
-                                    <option value=2>Sách nước ngoài</option>
-                                    <option value=3>Manga - Comic</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Sản phẩm nổi bật</label>
-                                <div class="checkbox">
-                                    <label>
-                                        <input name="prd_featured" type="checkbox" value=1>Nổi bật
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Mô tả sản phẩm</label>
-                                <textarea required name="prd_details" class="form-control" rows="3"></textarea>
-                            </div>
-                            <button name="sbm" type="submit" class="btn btn-success">Thêm mới</button>
-                            <button type="reset" class="btn btn-default">Làm mới</button>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- /.col-->
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!--/.main-->
-    <a href="">Tất Cả Sản Phẩm</a>
-</body>
-
-</html>
+require "./layout.php";
