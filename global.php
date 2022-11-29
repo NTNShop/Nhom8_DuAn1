@@ -1,20 +1,17 @@
 <?php
+
 session_start();
 /*
 * Định nghĩa các url cần thiết được sử dụng trong website
 */
-
-$ROOT_URL = "/du_an1";
-$CONTENT_URL = "$ROOT_URL/content";
+$ROOT_URL = "T-Coffee";
+$CONTENT_URL = "../../content";
 $ADMIN_URL = "$ROOT_URL/admin";
 $SITE_URL = "$ROOT_URL/site";
-$CONTENT_ADMIN_PATH = "$CONTENT_URL/admin";
-$CONTENT_SITE_PATH = "$CONTENT_URL/site";
 /*
 * Định nghĩa đường dẫn chứa ảnh sử dụng trong upload
 */
-$ADMIN_IMAGE_DIR = "$ROOT_URL/content/admin/images";
-
+$IMAGE_DIR = "../../content/images";
 /*
 * 2 biến toàn cục cần thiết để chia sẻ giữa controller và view
 */
@@ -30,8 +27,6 @@ function exist_param($fieldname)
 {
     return array_key_exists($fieldname, $_REQUEST);
 }
-
-
 /**
  * Lưu file upload vào thư mục
  * @param string $fieldname là tên trường file
@@ -42,12 +37,10 @@ function save_file($fieldname, $target_dir)
 {
     $file_uploaded = $_FILES[$fieldname];
     $file_name = basename($file_uploaded["name"]);
-    $target_path = $target_dir . "/" . $file_name;
+    $target_path = $target_dir . $file_name;
     move_uploaded_file($file_uploaded["tmp_name"], $target_path);
     return $file_name;
 }
-
-
 /**
  * Tạo cookie
  * @param string $name là tên cookie
@@ -58,17 +51,18 @@ function add_cookie($name, $value, $day)
 {
     setcookie($name, $value, time() + (86400 * $day), "/");
 }
-
 /**
  * Xóa cookie
  * @param string $name là tên cookie
  */
 function delete_cookie($name)
 {
-    add_cookie($name, "", -1);
+    add_cookie(
+        $name,
+        "",
+        -1
+    );
 }
-
-
 /**
  * Đọc giá trị cookie
  * @param string $name là tên cookie
@@ -78,11 +72,9 @@ function get_cookie($name)
 {
     return $_COOKIE[$name] ?? '';
 }
-
-
 /**
  * Kiểm tra đăng nhập và vai trò sử dụng.
- * Các php trong admin hoặc php yêu cầu phải đăng nhập mới được
+ * Các php trong admin hoặc php yêu cầu phải được đăng nhập mới được
  * phép sử dụng thì cần thiết phải gọi hàm này trước
  **/
 function check_login()
@@ -96,6 +88,6 @@ function check_login()
             return;
         }
     }
-    $_SESSION['request_uri'] = $_SERVER["REQUEST_URI"];
     header("location: $SITE_URL/tai-khoan/dang-nhap.php");
+    $_SESSION['request_uri'] = $_SERVER["REQUEST_URI"];
 }

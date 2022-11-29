@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EduBook add-category</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font  google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/datepicker3.css" rel="stylesheet">
     <link href="css/bootstrap-table.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
-    <!--Icons-->
-    <script src="js/lumino.glyphs.js"></script>
+    <script src="<?= $CONTENT_URL ?>/js/jquery.min.js" type="text/javascript"></script>
 
-    <!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<![endif]-->
+    <title>Admin Dashboard Panel</title>
 
+    <style>
+        main.dashboard {
+            /* margin-left: 300px; */
+            height: 100vh;
+        }
+
+        nav {
+            z-index: 9999;
+        }
+    </style>
 </head>
 
 <body>
+   
+    <main class="dashboard">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -45,7 +58,6 @@
                             <li><a href="#"><svg class="glyph stroked cancel">
                                         <use xlink:href="#stroked-cancel"></use>
                                     </svg> Đăng xuất</a></li>
-
                         </ul>
                     </li>
                 </ul>
@@ -56,10 +68,10 @@
 
     <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
         <ul class="nav menu">
-            <li class="active"><a href="category.php"><svg class="glyph stroked open folder">
+            <li><a href="?danh-muc"><svg class="glyph stroked open folder">
                         <use xlink:href="#stroked-open-folder" />
                     </svg>Quản lý danh mục</a></li>
-            <li><a href="product.php"><svg class="glyph stroked bag">
+            <li class=""><a href="?san-pham"><svg class="glyph stroked bag">
                         <use xlink:href="#stroked-bag"></use>
                     </svg>Quản lý sản phẩm</a></li>
             <li><a href="../index.php"><svg class="glyph stroked open folder">
@@ -68,47 +80,11 @@
         </ul>
 
     </div>
-    <!--/.sidebar-->
-
-    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
-        <div class="row">
-            <ol class="breadcrumb">
-                <li><a href="#"><svg class="glyph stroked home">
-                            <use xlink:href="#stroked-home"></use>
-                        </svg></a></li>
-                <li><a href="">Quản lý danh mục</a></li>
-                <li class="active">Thêm danh mục</li>
-            </ol>
+        <div class="">
+            <?php require $VIEW_NAME ?>
         </div>
-        <!--/.row-->
+    </main>
 
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Thêm danh mục</h1>
-            </div>
-        </div>
-        <!--/.row-->
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="col-md-8">
-
-                            <form role="form" method="post">
-                                <div class="form-group">
-                                    <label>Tên danh mục:</label>
-                                    <input required type="text" name="cat_name" class="form-control"
-                                        placeholder="Tên danh mục...">
-                                </div>
-                                <button type="submit" name="sbm" class="btn btn-success">Thêm mới</button>
-                                <button type="reset" class="btn btn-default">Làm mới</button>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-            </div><!-- /.col-->
-        </div>
-        <!--/.main-->
 </body>
 
 </html>

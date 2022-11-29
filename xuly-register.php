@@ -1,23 +1,33 @@
 <?php
-if (isset($_POST['login'])) {
-    require 'dao/pdo.php';
-    
-
-    $username = $_POST['username'];
-    $password = md5($_POST['password']);
-
-    $query = "SELECT * FROM khachhang WHERE username='$username' AND password='$password'";
-    // $row = $conn->query($query)->fetch_assoc();
-    // var_dump($row);
-   
-    $db = mysqli_query($conn, $query);
-    
-    if ( mysqli_num_rows($db)>0) {
-        $_SESSION['client'] = $username;
-        header('location: index.php');
+require './global.php';
+require './pdo.php';
+require 'dao/khach-hang.php';
+if (exist_param("btn_register")) {
+    $ma_kh = $_POST['ma_kh'];
+    $mat_khau = $_POST['mat_khau'];
+    $mat_khau2 = $_POST['mat_khau2'];
+    $ho_ten = $_POST['ho_ten'];
+    $email = $_POST['email'];
+    $vai_tro = $_POST['vai_tro'];
+    $kich_hoat = $_POST['kich_hoat'];
+    if (khach_hang_exist($ma_kh)) {
+        $MESSAGE = "Mã này đã được sử dụng!";
+        echo "Username is already exist";
     } else {
-        echo "<h2>Tài khoản không đúng ! Hãy đăng ký trước hoặc nhập tài khoản vừa đăng ký</h2>";
+        $file_name = save_file("up_hinh", "$IMAGE_DIR/users/");
+        $hinh = $file_name ? $file_name : "user.png";
+        try {
+            khach_hang_insert($ma_kh, $mat_khau, $ho_ten, $kich_hoat, $hinh, $email, $vai_tro);
+            $MESSAGE = "Đăng ký thành viên thành công!";
+            echo "Register successfull";
+            header("location: register.php");
+        } catch (Exception $exc) {
+            $MESSAGE = "Đăng ký thành viên thất bại!";
+            echo "Register fail";
+        }
     }
+} else {
+    global $ma_kh, $mat_khau, $ho_ten, $email, $hinh, $kich_hoat, $vai_tro, $mat_khau2;
 }
 
 // Bạn phải đăng ký tài khoản trước

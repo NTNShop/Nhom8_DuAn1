@@ -1,24 +1,47 @@
 <?php
-if (isset($_POST['login'])) {
-    require 'dao/pdo.php';
-    
 
-    $email = $_POST['email'];
-    $password = md5($_POST['password']);
+require './pdo.php';
+require './global.php';
+require 'dao/khach-hang.php';
 
-    $query = "SELECT * FROM account WHERE email='$email' AND password='$password'";
-    // $row = $conn->query($query)->fetch_assoc();
-    // var_dump($row);
-   
-    $db = mysqli_query($conn, $query);
-    
-    if ( mysqli_num_rows($db)>0) {
-        $_SESSION['EduBook-Cookie'] = $email;
-        header('location: index.php');
+if (exist_param("btn_login")) {
+    $ma_kh = $_POST['ma_kh'];
+    $mat_khau = $_POST['mat_khau'];
+    $user = khach_hang_login($ma_kh);
+    if ($user) {
+        if ($user['mat_khau'] == $mat_khau) {
+            $MESSAGE = "Đăng nhập thành công!";
+            $_SESSION["user"] = $user;
+            // Xử lý ghi nhớ tài khoản
+            // Quay trở lại trang được yêu cầu
+            if (isset($_SESSION['request_uri'])) {
+                header("location: " . $_SESSION['request_uri']);
+            }
+            echo 'Login successfully';
+            header("location: index.php");
+            if (exist_param("ghi_nho")) {
+                add_cookie("ma_kh", $ma_kh, 30);
+                add_cookie("mat_khau", $mat_khau, 30);
+            } else {
+                delete_cookie("ma_kh");
+                delete_cookie("mat_khau");
+            }
+        } else {
+            $MESSAGE = "Sai mật khẩu!";
+            echo "Password is not true!";
+        }
     } else {
-        echo "<h2>Tài khoản không đúng ! Hãy đăng ký trước hoặc nhập tài khoản vừa đăng ký</h2>";
+        echo "Username is not true or your account is unactive";
+        $MESSAGE = "Sai mã đăng nhập!";
     }
+} else {
+    if (exist_param("btn_logoff")) {
+        session_unset();
+        echo "Logout Successfully";
+        header("location: index.php");
+    }
+    $ma_kh = get_cookie("ma_kh");
+    $mat_khau = get_cookie("mat_khau");
 }
-
-// Bạn phải đăng ký tài khoản trước
-?>
+// $VIEW_NAME = "tai-khoan/dang-nhap-form.php";
+// require '../layout.php';

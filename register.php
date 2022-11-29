@@ -131,45 +131,48 @@
         <!--end header nav -->
 
         <section id="form">
-		<!--form-->
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4 col-sm-offset-1">
-					<div class="login-form">
-						<!--login form-->
-						<h2>Đăng nhập vào tài khoản của bạn</h2>
-						<form method="post" action="">
-							<input type="email" placeholder="Email Address" name="email" />
-							<input type="password" placeholder="Password" name="password" />
-							<span>
-								<input type="checkbox" class="checkbox">
-								Giữ cho tôi đăng nhập
-							</span>
-							<button name="login" type="submit" class="btn btn-default">Login</button>
-						</form>
-					</div>
-					<!--/login form-->
-				</div>
-				<div class="col-sm-1">
-					<h2 class="or">Hoặc</h2>
-				</div>
-				<div class="col-sm-4">
-					<div class="signup-form">
-						<!--sign up form-->
-						<h2>Đăng ký người dùng mới!</h2>
-						<form method="post" action="">
-							<input type="text" placeholder="Name" name="name" />
-							<input type="email" placeholder="Email Address" name="email" />
-							<input type="password" placeholder="Password" name="password" />
-							<button type="submit" name="submit" class="btn btn-default">Đăng ký</button>
-						</form>
-					</div>
-					<!--/sign up form-->
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/form-->
+            <!--form-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-1">
+                        <div class="login-form">
+                            <!--login form-->
+                            <h2>Đăng nhập vào tài khoản của bạn</h2>
+                            <form action="xuly_login.php" method="post">
+                                <input name="ma_kh">
+                                <input name="mat_khau" type="password">
+                                <input name="ghi_nho" type="checkbox" checked>
+                                Ghi nhớ tài khoản?
+                                <button name="btn_login">Đăng nhập</button>
+                            </form>
+                        </div>
+                        <!--/login form-->
+                    </div>
+                    <div class="col-sm-1">
+                        <h2 class="or">Hoặc</h2>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="signup-form">
+                            <!--sign up form-->
+                            <h2>Đăng ký người dùng mới!</h2>
+                            <form action="xuly-register.php" method="post" enctype="multipart/form-data">
+                                <input name="ma_kh" placeholder="Mã Khách Hàng">
+                                <input name="mat_khau" type="password" placeholder="Mật Khẩu">
+                                <input name="mat_khau2" type="password" placeholder="Nhập Lại Mật Khẩu">
+                                <input name="ho_ten" placeholder="Họ Tên">
+                                <input name="email" placeholder="email">
+                                <input name="up_hinh" type="file">
+                                <button name="btn_register">Đăng ký</button>
+                                <input name="vai_tro" value="0" type="hidden">
+                                <input name="kich_hoat" value="1" type="hidden">
+                            </form>
+                        </div>
+                        <!--/sign up form-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/form-->
 </body>
 
 </html>
