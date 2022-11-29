@@ -51,6 +51,7 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
+                        
                         <table data-toolbar="#toolbar" data-toggle="table">
 
                             <thead>
@@ -60,40 +61,27 @@
                                     <th>Hành động</th>
                                 </tr>
                             </thead>
+                            
                             <tbody>
+                                <?php
+        $items = loai_select_all();
+        foreach ($items as $item) { ?>
                                 <tr>
-                                    <td style="">1</td>
-                                    <td style="">Sách Tiếng Việt</td>
+                                    <td style=""><?= $item['ma_loai'] ?></td>
+                                    <td style=""><?= $item['ten_loai'] ?></td>
                                     <td class="form-group">
-                                        <a href="edit_category.php" class="btn btn-primary"><i
+                                        <a href="?danh-muc&btn_edit&ma_loai=<?= $item['ma_loai'] ?>" class="btn btn-primary"><i
                                                 class="glyphicon glyphicon-pencil"></i></a>
-                                        <a href="/" class="btn btn-danger"><i
+                                        <a href="?danh-muc&btn_delete&ma_loai=<?= $item['ma_loai'] ?>" class="btn btn-danger"><i
                                                 class="glyphicon glyphicon-remove"></i></a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td style="">2</td>
-                                    <td style="">Sách nước ngoài</td>
-                                    <td class="form-group">
-                                        <a href="edit_category.php" class="btn btn-primary"><i
-                                                class="glyphicon glyphicon-pencil"></i></a>
-                                        <a href="/" class="btn btn-danger"><i
-                                                class="glyphicon glyphicon-remove"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="">2</td>
-                                    <td style="">Manga - Comic</td>
-                                    <td class="form-group">
-                                        <a href="edit_category.php" class="btn btn-primary"><i
-                                                class="glyphicon glyphicon-pencil"></i></a>
-                                        <a href="/" class="btn btn-danger"><i
-                                                class="glyphicon glyphicon-remove"></i></a>
-                                    </td>
-                                </tr>
+<?php } ?>
 
                             </tbody>
+                            
                         </table>
+                        
                     </div>
                     <div class="panel-footer">
                         <nav aria-label="Page navigation example">
