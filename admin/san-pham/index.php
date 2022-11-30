@@ -11,13 +11,13 @@ if (exist_param("btn_insert")) {
         $ten_hh = $_POST['ten_hh'];
         $don_gia = $_POST['don_gia'];
         $giam_gia = isset($_POST['giam_gia']) ? $_POST['giam_gia'] : null;
-        $up_hinh = save_file("hinh", "$IMAGE_DIR/products/");
+        $up_hinh = save_file("up_hinh", "$IMAGE_DIR/products/");
         $hinh = strlen(".$up_hinh.") > 0 ? $up_hinh : 'product.png';
         $mo_ta = $_POST['mo_ta'];
         $dac_biet = $_POST['dac_biet'];
-        $so_luot_xem = $_POST['so_luot_xem'];
+        $so_luot_xem = null;
         $ma_loai = $_POST['loai_hang'];
-        $ngay_nhap = $_POST['ngay_nhap'];
+        $ngay_nhap = null;
         hang_hoa_insert($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
         unset($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
         $MESSAGE = "Thêm mới thành công!";

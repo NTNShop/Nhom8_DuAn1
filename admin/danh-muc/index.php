@@ -34,7 +34,7 @@ if (exist_param("btn_insert")) {
     $VIEW_NAME = "danh-muc/list.php";
 } else if (exist_param("btn_edit")) {
     $item = loai_select_by_id($ma_loai);
-    // extract($item);
+    extract($item);
     $VIEW_NAME = "danh-muc/edit.php";
 } else if (exist_param("btn_list")) {
     $items = loai_select_all();

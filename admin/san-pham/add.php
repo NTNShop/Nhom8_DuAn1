@@ -1,3 +1,6 @@
+<?php 
+require "../dao/loai.php";
+?>
 <!DOCTYPE html>
 <html>
 
@@ -47,19 +50,19 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="col-md-6">
-                            <form role="form" method="post" enctype="multipart/form-data">
+                            <form role="form" action="?san-pham&btn_insert" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label>Tên sản phẩm</label>
-                                    <input required name="prd_name" class="form-control" placeholder="">
+                                    <input required name="ten_hh" class="form-control" placeholder="">
                                 </div>
 
                                 <div class="form-group">
                                     <label>Giá sản phẩm</label>
-                                    <input required name="prd_price" type="number" min="0" class="form-control">
+                                    <input required name="don_gia" type="number" min="0" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>Khuyến mãi</label>
-                                    <input required name="prd_promotion" type="number" min="0" class="form-control">
+                                    <input required name="giam_gia" type="number" min="0" class="form-control">
                                 </div>
 
                         </div>
@@ -67,7 +70,7 @@
                             <div class="form-group">
                                 <label>Ảnh sản phẩm</label>
 
-                                <input required name="prd_image" type="file">
+                                <input required name="up_hinh" type="file">
                                 <br>
                                 <div>
                                     <img style="filter: drop-shadow(0 0 5px rgb(119, 119, 145));" width="80px" src="">
@@ -75,10 +78,14 @@
                             </div>
                             <div class="form-group">
                                 <label>Danh mục</label>
-                                <select name="cat_id" class="form-control">
-                                    <option value=1>Sách Tiếng Việt</option>
-                                    <option value=2>Sách nước ngoài</option>
-                                    <option value=3>Manga - Comic</option>
+                                <select name="loai_hang" class="form-control">
+                                    <?php
+                                    $danhmuc = loai_select_all();
+                                    foreach($danhmuc as $dm) :
+                                        extract($dm);
+                                    ?>
+                                    <option value="<?= $ma_loai ?>"><?= $ten_loai ?></option>
+                                    <?php endforeach ?>
                                 </select>
                             </div>
 
@@ -86,13 +93,13 @@
                                 <label>Sản phẩm nổi bật</label>
                                 <div class="checkbox">
                                     <label>
-                                        <input name="prd_featured" type="checkbox" value=1>Nổi bật
+                                        <input name="dac_biet" type="checkbox" value=1>Nổi bật
                                     </label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Mô tả sản phẩm</label>
-                                <textarea required name="prd_details" class="form-control" rows="3"></textarea>
+                                <textarea required name="mo_ta" class="form-control" rows="3"></textarea>
                             </div>
                             <button name="sbm" type="submit" class="btn btn-success">Thêm mới</button>
                             <button type="reset" class="btn btn-default">Làm mới</button>

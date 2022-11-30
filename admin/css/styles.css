@@ -5,6 +5,9 @@ Version 1.0
 
 
 /*Global Styles*/
+html{
+	scroll-behavior: smooth;
+}
 
 body {
 	background: #f1f4f7;

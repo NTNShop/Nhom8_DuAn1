@@ -109,10 +109,10 @@
                     <div class="header__nav col-lg-9 col-md-0 col-sm-0">
                         <ul class="header__nav-list">
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Sách Tiếng việt</a>
+                                <a href="#sach-tieng-viet" class="header__nav-link">Sách Tiếng việt</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Sách Nước ngoài</a>
+                                <a href="#sach-tieng-anh" class="header__nav-link">Sách Nước ngoài</a>
                             </li>
                             <li class="header__nav-item">
                                 <a href="#" class="header__nav-link">Manga - Comic</a>
@@ -126,7 +126,7 @@
     <!-- end header -->
 
     <!-- category 1: Sách trong nước-->
-    <section id='category1' class="product__love">
+    <section id='sach-tieng-viet' class="product__love">
         <div class="container">
             <div class="row bg-white">
                 <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
@@ -291,7 +291,7 @@
     </section>
 
     <!-- category 2: Sách nước ngoài-->
-    <section id='category2' class="product__love">
+    <section id='sach-tieng-anh' class="product__love">
         <div class="container">
             <div class="row bg-white">
                 <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">

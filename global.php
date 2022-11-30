@@ -11,7 +11,7 @@ $SITE_URL = "$ROOT_URL/site";
 /*
 * Định nghĩa đường dẫn chứa ảnh sử dụng trong upload
 */
-$IMAGE_DIR = "../../content/images";
+$IMAGE_DIR = "../content/images";
 /*
 * 2 biến toàn cục cần thiết để chia sẻ giữa controller và view
 */
