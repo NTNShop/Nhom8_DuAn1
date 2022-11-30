@@ -160,7 +160,7 @@
                                 <input name="mat_khau" type="password" placeholder="Mật Khẩu">
                                 <input name="mat_khau2" type="password" placeholder="Nhập Lại Mật Khẩu">
                                 <input name="ho_ten" placeholder="Họ Tên">
-                                <input name="email" placeholder="email">
+                                <input name="email" placeholder="Email">
                                 <input name="up_hinh" type="file">
                                 <button name="btn_register">Đăng ký</button>
                                 <input name="vai_tro" value="0" type="hidden">
