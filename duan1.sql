@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 29, 2022 lúc 02:30 PM
+-- Thời gian đã tạo: Th10 30, 2022 lúc 11:24 AM
 -- Phiên bản máy phục vụ: 10.4.24-MariaDB
 -- Phiên bản PHP: 8.1.6
 
@@ -47,13 +47,6 @@ CREATE TABLE `binh_luan` (
   `ngay_binh_luan` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Đang đổ dữ liệu cho bảng `binh_luan`
---
-
-INSERT INTO `binh_luan` (`ma_bl`, `noi_dung`, `ma_kh`, `ma_hh`, `ngay_binh_luan`) VALUES
-(16, 'sdsdgdfh', 'admin', 14, '2022-11-26');
-
 -- --------------------------------------------------------
 
 --
@@ -66,10 +59,10 @@ CREATE TABLE `hang_hoa` (
   `don_gia` float NOT NULL,
   `giam_gia` float DEFAULT NULL,
   `hinh` varchar(50) NOT NULL,
-  `ngay_nhap` date NOT NULL,
+  `ngay_nhap` date DEFAULT NULL,
   `mo_ta` varchar(2000) NOT NULL,
   `dac_biet` bit(1) NOT NULL,
-  `so_luot_xem` int(11) NOT NULL,
+  `so_luot_xem` int(11) DEFAULT NULL,
   `ma_loai` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -78,13 +71,7 @@ CREATE TABLE `hang_hoa` (
 --
 
 INSERT INTO `hang_hoa` (`ma_hh`, `ten_hh`, `don_gia`, `giam_gia`, `hinh`, `ngay_nhap`, `mo_ta`, `dac_biet`, `so_luot_xem`, `ma_loai`) VALUES
-(8, 'Phan Thanh Qui', 32, 55, 'IMG_7768.JPG', '2022-10-09', 'qkefhkjlqhvjbdmnabvcmavfdcjqe', b'1', 202, 2),
-(10, 'Trieu Hong Ky', 55, 0, 'IMG_7798.JPG', '2022-12-12', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil commodi nesciunt placeat quasi dolorum repudiandae quae aperiam cum nobis, qui hic deleniti veniam, reprehenderit alias vitae corrupti inventore omnis molestias.', b'1', 181, 4),
-(11, 'Le Thanh Duy', 137345, 12, 'IMG_7766.JPG', '2022-12-12', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil commodi nesciunt placeat quasi dolorum repudiandae quae aperiam cum nobis, qui hic deleniti veniam, reprehenderit alias vitae corrupti inventore omnis molestias.', b'1', 125, 5),
-(12, 'hehehe', 2000, 10, 'IMG_7376.JPG', '2022-12-12', 'It is a paradisematic country, in which roasted parts of sentences fly into your mouth.', b'1', 49, 1),
-(13, 'Le Tan Tai', 2000, 10, 'IMG_7801.JPG', '2022-12-12', 'It is a paradisematic country, in which roasted parts of sentences fly into your mouth.', b'1', 27, 1),
-(14, 'heheheheheheh', 59, 0, 'IMG_7807.JPG', '2022-10-22', 'ahgvcjkdahgvchjkagchkjvahjkcbvhajkvcgjhafchjfvajhcvjavcjvajc', b'1', 13, 1),
-(15, 'taitai', 25, 0, 'IMG_7784.JPG', '2022-10-22', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil commodi nesciunt placeat quasi dolorum repudiandae quae aperiam cum nobis, qui hic deleniti veniam, reprehenderit alias vitae corrupti inventore omnis molestias.', b'1', 19, 2);
+(20, 'phatt', 200, 1, 'sach_trinh_tham.jpg', NULL, 'qcsdichahsgvc', b'1', NULL, 5);
 
 -- --------------------------------------------------------
 
@@ -126,14 +113,6 @@ CREATE TABLE `hoa_don_chi_tiet` (
   `ma_hd` int(11) NOT NULL,
   `ma_hh` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Đang đổ dữ liệu cho bảng `hoa_don_chi_tiet`
---
-
-INSERT INTO `hoa_don_chi_tiet` (`ma_hdct`, `don_gia`, `size`, `so_luong`, `ma_hd`, `ma_hh`) VALUES
-(46, 55, 'XL', 5, 38, 10),
-(47, 32, 'XL', 5, 38, 8);
 
 -- --------------------------------------------------------
 
@@ -253,7 +232,7 @@ ALTER TABLE `binh_luan`
 -- AUTO_INCREMENT cho bảng `hang_hoa`
 --
 ALTER TABLE `hang_hoa`
-  MODIFY `ma_hh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `ma_hh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT cho bảng `hoa_don`
