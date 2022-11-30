@@ -1,4 +1,4 @@
-<section class="product">
+<section id="manga" class="product">
             <div class="container">
                 <div class="row">
                     <aside class="product__sidebar col-lg-3 col-md-0 col-sm-12">

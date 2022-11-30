@@ -156,7 +156,7 @@
                                         width="512"> Sách Tiếng Việt</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">
+                                <a href="category.php #sach-tieng-anh" class="menu__link">
                                     <img src="images1/item/translation.png" alt="" class="menu__item-icon" id="Capa_1"
                                         enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
                                         width="512"> Sách nước ngoài</a>
