@@ -80,7 +80,7 @@
                         </div>
                         <div class="header__call-info">
                             <div class="header__call-text">
-                                Gọi điện tư vấn
+                            <a href="contact.php">Gọi điện tư vấn</a> 
                             </div>
                             <div class="header__call-number">
                                 0942 785 922
@@ -90,7 +90,7 @@
 
                     <a href="cart.php" class="col-lg-1 col-md-1 col-sm-0 header__cart">
                         <div class="header__cart-icon-wrap">
-                            <span class="header__notice">4</span>
+                            <span class="header__notice"></span>
                             <i class="fas fa-shopping-cart header__nav-cart-icon"></i>
                         </div>
                     </a>

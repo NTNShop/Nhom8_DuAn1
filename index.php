@@ -100,7 +100,7 @@
 
                         <a href="cart.php" class="col-lg-1 col-md-1 col-sm-0 header__cart">
                             <div class="header__cart-icon-wrap">
-                                <span class="header__notice">4</span>
+                                <span class="header__notice"></span>
                                 <i class="fas fa-shopping-cart header__nav-cart-icon"></i>
                             </div>
                         </a>
@@ -156,14 +156,14 @@
                                         width="512"> Sách Tiếng Việt</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">
+                                <a href="category.php #sach-tieng-anh" class="menu__link">
                                     <img src="images1/item/translation.png" alt="" class="menu__item-icon" id="Capa_1"
                                         enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
                                         width="512"> Sách nước ngoài</a>
                             </li>
 
                             <li class="menu__item">
-                                <a href="#" class="menu__link">
+                                <a href="#manga" class="menu__link">
                                     <img src="images1/item/1380754_batman_comic_hero_superhero_icon.png" alt=""
                                         class="menu__item-icon" viewBox="0 0 512 512" width="1012" height="512"> Manga -
                                     Comic</a>
