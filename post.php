@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="css/category.css">
 </head>
 
 <body>
@@ -74,7 +75,7 @@
                         </div>
                         <div class="header__call-info">
                             <div class="header__call-text">
-                                Gọi điện tư vấn
+                            <a href="contact.php">Gọi điện tư vấn</a> 
                             </div>
                             <div class="header__call-number">
                             0942 785 922

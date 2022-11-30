@@ -163,7 +163,7 @@
                             </li>
 
                             <li class="menu__item">
-                                <a href="#" class="menu__link">
+                                <a href="#manga" class="menu__link">
                                     <img src="images1/item/1380754_batman_comic_hero_superhero_icon.png" alt=""
                                         class="menu__item-icon" viewBox="0 0 512 512" width="1012" height="512"> Manga -
                                     Comic</a>
