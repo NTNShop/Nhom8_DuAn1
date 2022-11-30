@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/category.css">
 </head>
 
 <body>
@@ -89,7 +90,7 @@
                             </div>
                             <div class="header__call-info">
                                 <div class="header__call-text">
-                                    Gọi điện tư vấn
+                                    <a href="contact.php">Gọi điện tư vấn</a> 
                                 </div>
                                 <div class="header__call-number">
                                 0942 785 922
@@ -149,7 +150,7 @@
                     <nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
                         <ul class="menu__list">
                             <li class="menu__item menu__item--active">
-                                <a href="#" class="menu__link">
+                                <a href="category.php" class="menu__link">
                                     <img src="images1/item/baby-boy.png" alt="" class="menu__item-icon" id="Capa_1"
                                         enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
                                         width="512"> Sách Tiếng Việt</a>

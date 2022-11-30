@@ -109,7 +109,7 @@
                     <div class="header__nav col-lg-9 col-md-0 col-sm-0">
                         <ul class="header__nav-list">
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Sách Trong Nước</a>
+                                <a href="#" class="header__nav-link">Sách Tiếng việt</a>
                             </li>
                             <li class="header__nav-item">
                                 <a href="#" class="header__nav-link">Sách Nước ngoài</a>

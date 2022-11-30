@@ -1,0 +1,12 @@
+.container .row .header__nav ul li a:hover {}
+
+.header__call-info .header__call-text a {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.header__call-info .header__call-text a:hover {
+    text-decoration: none;
+}
