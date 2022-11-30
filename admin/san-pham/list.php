@@ -106,7 +106,7 @@ require '../dao/loai.php';
                                     <th data-field="name" data-sortable="true">Tên sản phẩm</th>
                                     <th data-field="price" data-sortable="true">Giá</th>
                                     <th>Ảnh sản phẩm</th>
-                                    <th>Số lượng đã bán</th>
+                                    <th>Mô tả</th>
                                     <th>Danh mục</th>
                                     <th>Hành động</th>
                                 </tr>
@@ -125,7 +125,7 @@ require '../dao/loai.php';
                                         <td><?= $don_gia ?> đ</td>
                                         <td style="text-align: center"><img width="130" height="180" src="../content/images/products/<?= $hinh ?>" />
                                         </td>
-                                        <td>10</td>
+                                        <td><?= $mo_ta ?></td>
                                         <td><?php echo "" . loai_select_by_id($ma_loai)['ten_loai'] ?></td>
                                         <td class="form-group">
                                             <a href="?san-pham&btn_edit&ma_hh=<?= $ma_hh ?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
