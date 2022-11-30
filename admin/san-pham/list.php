@@ -113,12 +113,14 @@ require '../dao/loai.php';
                             </thead>
                             <tbody>
                                 <?php
+                                $i = 0;
                                 $items = hang_hoa_select_all();
                                 foreach ($items as $item) {
                                     extract($item);
+                                    $i++;
                                 ?>
                                     <tr>
-                                        <td>1</td>
+                                        <td><?= $i ?></td>
                                         <td><?= $ten_hh ?></td>
                                         <td><?= $don_gia ?> đ</td>
                                         <td style="text-align: center"><img width="130" height="180" src="../content/images/products/<?= $hinh ?>" />

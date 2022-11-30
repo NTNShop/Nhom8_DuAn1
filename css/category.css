@@ -1,12 +1,51 @@
-.container .row .header__nav ul li a:hover {}
+.container .row .header__nav ul li a:hover {
+}
 
 .header__call-info .header__call-text a {
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--white-color);
-    margin-bottom: 1rem;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-bottom: 1rem;
 }
 
 .header__call-info .header__call-text a:hover {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.cate-wrap {
+  position: relative;
+  display: block;
+}
+.cate-wrap a {
+  display: block;
+}
+
+.cate-wrap:hover .submenu,
+.cate-wrap .submenu:hover {
+  display: block;
+}
+.cate-wrap .submenu {
+  position: absolute;
+  top: 20px;
+  width: 240px;
+  z-index: 999;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0px 4px 13px #000;
+}
+.cate-wrap .submenu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cate-wrap .submenu ul li{
+    width: 100%;
+}
+.cate-wrap .submenu ul li a {
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  color: #000;
+  padding: 12px;
 }
