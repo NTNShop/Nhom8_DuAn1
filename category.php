@@ -9,15 +9,18 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/category.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -63,8 +66,7 @@
                             <option value="3">Manga-Comic</option>
 
                         </select>
-                        <input type="text" id="productNameSelect" class="header__search-input"
-                            placeholder="Tìm kiếm tại đây...">
+                        <input type="text" id="productNameSelect" class="header__search-input" placeholder="Tìm kiếm tại đây...">
                         <button class="header__search-btn">
                             <div class="header__search-icon-wrap">
                                 <i class="fas fa-search header__search-icon"></i>
@@ -115,7 +117,7 @@
                                 <a href="#sach-tieng-anh" class="header__nav-link">Sách Nước ngoài</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Manga - Comic</a>
+                                <a href="#manga-comic" class="header__nav-link">Manga - Comic</a>
                             </li>
                         </ul>
                     </div>
@@ -484,7 +486,7 @@
     </section>
 
     <!-- category 3: Manga - Comics-->
-    <section id='category3' class="product__love">
+    <section id='manga-comic' class="product__love">
         <div class="container">
             <div class="row bg-white">
                 <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
@@ -555,8 +557,7 @@
 
                 <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
                     <div class="product__panel-img-wrap">
-                        <img src="images1/product/600my-hero-academia-hoc-vien-sieu-anh-hung.jpg" alt=""
-                            class="product__panel-img">
+                        <img src="images1/product/600my-hero-academia-hoc-vien-sieu-anh-hung.jpg" alt="" class="product__panel-img">
                     </div>
                     <h3 class="product__panel-heading">
                         <a href="#" class="product__panel-link">My Hero Academia - Tập 27: One’s Justice</a>
@@ -614,8 +615,7 @@
 
                 <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
                     <div class="product__panel-img-wrap">
-                        <img src="images1/product/one-piece-tap-95_chuyen-chu-du-cua-oden_1.jpg" alt=""
-                            class="product__panel-img">
+                        <img src="images1/product/one-piece-tap-95_chuyen-chu-du-cua-oden_1.jpg" alt="" class="product__panel-img">
                     </div>
                     <h3 class="product__panel-heading">
                         <a href="#" class="product__panel-link">One Piece - Tập 95 (Bản Bìa Rời)</a>
@@ -728,7 +728,7 @@
 
                             <div class="footer__top-contact-phone-wrap">
                                 <div class="footer__top-contact-phone">
-                                0942 785 922
+                                    0942 785 922
                                 </div>
                                 <div class="footer__top-contact-des">
                                     (Giải đáp thắc mắc 24/24)

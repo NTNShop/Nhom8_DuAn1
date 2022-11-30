@@ -126,8 +126,8 @@ require '../dao/loai.php';
                                         <td>10</td>
                                         <td><?php echo "" . loai_select_by_id($ma_loai)['ten_loai'] ?></td>
                                         <td class="form-group">
-                                            <a href="edit_product.php" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
-                                            <a href="#" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                            <a href="?san-pham&btn_edit&ma_hh=<?= $ma_hh ?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
+                                            <a href="?san-pham&btn_delete&ma_hh=<?= $ma_hh ?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
                                         </td>
                                     </tr>
                                 <?php } ?>

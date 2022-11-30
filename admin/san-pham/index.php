@@ -34,10 +34,10 @@ if (exist_param("btn_insert")) {
         $up_hinh = save_file("up_hinh", "$IMAGE_DIR/products/");
         $hinh = strlen(".$up_hinh.") > 0 ? $up_hinh : $hinh;
         $mo_ta = $_POST['mo_ta'];
-        $dac_biet = $_POST['dac_biet'];
-        $so_luot_xem = $_POST['so_luot_xem'];
+        $dac_biet = isset($_POST['dac_biet']) ? $_POST['dac_biet'] : 0;
+        $so_luot_xem = null;
         $ma_loai = $_POST['loai_hang'];
-        $ngay_nhap = $_POST['ngay_nhap'];
+        $ngay_nhap = null;
         hang_hoa_update($ma_hh, $ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
         $MESSAGE = "Cập nhật thành công!";
     } catch (Exception $exc) {
