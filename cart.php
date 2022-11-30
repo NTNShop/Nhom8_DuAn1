@@ -76,7 +76,7 @@
                                 Gọi điện tư vấn
                             </div>
                             <div class="header__call-number">
-                                039.882.3232
+                                0942 785 922
                             </div>
                         </div>
                     </div>
@@ -167,89 +167,7 @@
                 </div>
             </article>
 
-            <article class="row cart__body">
-                <div class="col-6 cart__body-name">
-                    <div class="cart__body-name-img">
-                        <img src="images1/product/8936049524905.jpg">
-                    </div>
-                    <a href="" class="cart__body-name-title">
-                        5 Centimet Trên Giây
-                    </a>
-                </div>
-                <div class="col-3 cart__body-quantity">
-                    <input type="button" value="-" class="cart__body-quantity-minus">
-                    <input type="number" step="1" min="1" max="999" value="1" class="cart__body-quantity-total">
-                    <input type="button" value="+" class="cart__body-quantity-plus">
-                </div>
-                <div class="col-3 cart__body-price">
-                    <span>39.500đ</span>
-
-                    <a href="#">Xóa</a>
-                </div>
-            </article>
-
-            <article class="row cart__body">
-                <div class="col-6 cart__body-name">
-                    <div class="cart__body-name-img">
-                        <img src="images1/product/untitled-1_9_25_1.jpg">
-                    </div>
-                    <a href="" class="cart__body-name-title">
-                        Tôi Thích Bản Thân Nỗ Lực Hơn ( Tái bản 2019)
-                    </a>
-                </div>
-                <div class="col-3 cart__body-quantity">
-                    <input type="button" value="-" class="cart__body-quantity-minus">
-                    <input type="number" step="1" min="1" max="999" value="2" class="cart__body-quantity-total">
-                    <input type="button" value="+" class="cart__body-quantity-plus">
-                </div>
-                <div class="col-3 cart__body-price">
-                    <span>76.800đ</span>
-
-                    <a href="#">Xóa</a>
-                </div>
-            </article>
-
-            <article class="row cart__body">
-                <div class="col-6 cart__body-name">
-                    <div class="cart__body-name-img">
-                        <img src="images1/product/8936186542176.jpg">
-                    </div>
-                    <a href="" class="cart__body-name-title">
-                        Tôi Thích Một Cô Gái Nhưng Không Dám Ngỏ Lời
-                    </a>
-                </div>
-                <div class="col-3 cart__body-quantity">
-                    <input type="button" value="-" class="cart__body-quantity-minus">
-                    <input type="number" step="1" min="1" max="999" value="1" class="cart__body-quantity-total">
-                    <input type="button" value="+" class="cart__body-quantity-plus">
-                </div>
-                <div class="col-3 cart__body-price">
-                    <span>70.000đ</span>
-
-                    <a href="#">Xóa</a>
-                </div>
-            </article>
-
-            <article class="row cart__body">
-                <div class="col-6 cart__body-name">
-                    <div class="cart__body-name-img">
-                        <img src="images1/product/biamem.jpg">
-                    </div>
-                    <a href="" class="cart__body-name-title">
-                        Con Chim Xanh Biếc Bay Về - Tặng Kèm 6
-                    </a>
-                </div>
-                <div class="col-3 cart__body-quantity">
-                    <input type="button" value="-" class="cart__body-quantity-minus">
-                    <input type="number" step="1" min="1" max="999" value="2" class="cart__body-quantity-total">
-                    <input type="button" value="+" class="cart__body-quantity-plus">
-                </div>
-                <div class="col-3 cart__body-price">
-                    <span>112.500đ</span>
-
-                    <a href="#">Xóa</a>
-                </div>
-            </article>
+           
 
             <article class="row cart__foot">
                 <div class="col-6 col-lg-6 col-sm-6 cart__foot-update">
@@ -261,7 +179,7 @@
                 </p>
 
                 <span class="col-3 col-lg-3 col-sm-3 cart__foot-price">
-                    298.8000đ <br>
+                     <br>
 
                     <button class="cart__foot-price-btn">Mua hàng</button>
                 </span>
@@ -283,7 +201,7 @@
                             Edubook là cửa hàng luôn cung cấp cho các bạn tìm tòi tri thức, đam mê đọc sách trên khắp cả
                             nước.Chúng tôi sẽ liên tục cập nhật những cuốn sách hay nhất, mới nhất, chất lượng nhất giúp
                             người đọc có những cuốn sách hay nhất để đọc! <br> <br> Điện thoại: 0352 860 701 <br> Email:
-                            teamed2@gmail.com <br> Zalo: 039.882.3232 <br>
+                            nhanntpc03225@gmail.com <br> Zalo: 0942 785 922 <br>
                         </div>
                     </article>
 
@@ -323,7 +241,7 @@
 
                             <div class="footer__top-contact-phone-wrap">
                                 <div class="footer__top-contact-phone">
-                                    039.882.3232
+                                    0942 785 922
                                 </div>
                                 <div class="footer__top-contact-des">
                                     (Giải đáp thắc mắc 24/24)
