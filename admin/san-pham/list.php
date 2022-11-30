@@ -1,3 +1,6 @@
+<?php
+require '../dao/loai.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -25,8 +28,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#sidebar-collapse">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -110,68 +112,25 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Chuyện con mèo dạy hải âu bay</td>
-                                    <td>34.300 đ</td>
-                                    <td style="text-align: center"><img width="130" height="180" src="img/meobay.jpg" />
-                                    </td>
-                                    <td>10</td>
-                                    <td>Sách Tiếng Việt</td>
-                                    <td class="form-group">
-                                        <a href="edit_product.php" class="btn btn-primary"><i
-                                                class="glyphicon glyphicon-pencil"></i></a>
-                                        <a href="#" class="btn btn-danger"><i
-                                                class="glyphicon glyphicon-remove"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Tôi Thích Một Cô Gái Nhưng Chẳng Dám Ngỏ Lời</td>
-                                    <td>70.000 đ</td>
-                                    <td style="text-align: center"><img width="130" height="180"
-                                            src="img/thichkhong.jpg" /></td>
-                                    <td>50</td>
-                                    <td>Sách Tiếng Việt</td>
-                                    <td class="form-group">
-                                        <a href="edit_product.php" class="btn btn-primary"><i
-                                                class="glyphicon glyphicon-pencil"></i></a>
-                                        <a href="#" class="btn btn-danger"><i
-                                                class="glyphicon glyphicon-remove"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>English Grammar in Use Book with Answer </td>
-                                    <td>169.100 đ</td>
-                                    <td style="text-align: center"><img width="130" height="180"
-                                            src="img/img_7523.jpg" /></td>
-                                    <td>10</td>
-                                    <td>Sách Nước Ngoài</td>
-                                    <td class="form-group">
-                                        <a href="edit_product.php" class="btn btn-primary"><i
-                                                class="glyphicon glyphicon-pencil"></i></a>
-                                        <a href="#" class="btn btn-danger"><i
-                                                class="glyphicon glyphicon-remove"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>My Hero Academia - Tập 27: One’s Justice</td>
-                                    <td>18.000 đ</td>
-                                    <td style="text-align: center"><img width="130" height="180"
-                                            src="img/600my-hero-academia-hoc-vien-sieu-anh-hung.jpg" /></td>
-                                    <td>10</td>
-                                    <td>
-                                        Manga - Comics
-                                    </td>
-                                    <td class="form-group">
-                                        <a href="edit_product.php" class="btn btn-primary"><i
-                                                class="glyphicon glyphicon-pencil"></i></a>
-                                        <a href="#" class="btn btn-danger"><i
-                                                class="glyphicon glyphicon-remove"></i></a>
-                                    </td>
-                                </tr>
+                                <?php
+                                $items = hang_hoa_select_all();
+                                foreach ($items as $item) {
+                                    extract($item);
+                                ?>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><?= $ten_hh ?></td>
+                                        <td><?= $don_gia ?> đ</td>
+                                        <td style="text-align: center"><img width="130" height="180" src="../content/images/products/<?= $hinh ?>" />
+                                        </td>
+                                        <td>10</td>
+                                        <td><?php echo "" . loai_select_by_id($ma_loai)['ten_loai'] ?></td>
+                                        <td class="form-group">
+                                            <a href="edit_product.php" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
+                                            <a href="#" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
                             </tbody>
                         </table>
                     </div>

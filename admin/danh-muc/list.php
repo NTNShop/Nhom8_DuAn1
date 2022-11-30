@@ -51,7 +51,7 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        
+
                         <table data-toolbar="#toolbar" data-toggle="table">
 
                             <thead>
@@ -61,27 +61,25 @@
                                     <th>Hành động</th>
                                 </tr>
                             </thead>
-                            
+
                             <tbody>
                                 <?php
-        $items = loai_select_all();
-        foreach ($items as $item) { ?>
-                                <tr>
-                                    <td style=""><?= $item['ma_loai'] ?></td>
-                                    <td style=""><?= $item['ten_loai'] ?></td>
-                                    <td class="form-group">
-                                        <a href="?danh-muc&btn_edit&ma_loai=<?= $item['ma_loai'] ?>" class="btn btn-primary"><i
-                                                class="glyphicon glyphicon-pencil"></i></a>
-                                        <a href="?danh-muc&btn_delete&ma_loai=<?= $item['ma_loai'] ?>" class="btn btn-danger"><i
-                                                class="glyphicon glyphicon-remove"></i></a>
-                                    </td>
-                                </tr>
-<?php } ?>
+                                $items = loai_select_all();
+                                foreach ($items as $item) { ?>
+                                    <tr>
+                                        <td style=""><?= $item['ma_loai'] ?></td>
+                                        <td style=""><?= $item['ten_loai'] ?></td>
+                                        <td class="form-group">
+                                            <a href="?danh-muc&btn_edit&ma_loai=<?= $item['ma_loai'] ?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
+                                            <a href="?danh-muc&btn_delete&ma_loai=<?= $item['ma_loai'] ?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
 
                             </tbody>
-                            
+
                         </table>
-                        
+
                     </div>
                     <div class="panel-footer">
                         <nav aria-label="Page navigation example">

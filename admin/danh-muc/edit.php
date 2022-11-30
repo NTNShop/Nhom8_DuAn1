@@ -46,14 +46,14 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="col-md-8">
-                            <form role="form" action="?danh-muc" method="post">
+                            <form role="form" action="?danh-muc&btn_update" method="post">
                                 <div class="form-group">
                                     <label>Tên danh mục:</label>
                                     <input type="text" name="ten_loai" required value="" class="form-control"
                                         placeholder="Tên danh mục...">
-                                        <input type="hidden" name="ma_loai">
+                                        <input type="hidden" name="ma_loai" value="<?= $ma_loai ?>">
                                 </div>
-                                <button type="submit" name="btn_edit" class="btn btn-primary">Cập nhật</button>
+                                <button type="submit" name="btn_update" class="btn btn-primary">Cập nhật</button>
                                 <button type="reset" class="btn btn-default">Làm mới</button>
                         </div>
                         </form>
