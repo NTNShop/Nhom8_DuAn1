@@ -81,7 +81,7 @@
                                 Gọi điện tư vấn
                             </div>
                             <div class="header__call-number">
-                                039.882.3232
+                                0942 785 922
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                     <div class="header__nav col-lg-9 col-md-0 col-sm-0">
                         <ul class="header__nav-list">
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Sách Trong Nước</a>
+                                <a href="#" class="header__nav-link">Sách Tiếng việt</a>
                             </li>
                             <li class="header__nav-item">
                                 <a href="#" class="header__nav-link">Sách Nước ngoài</a>
@@ -688,7 +688,7 @@
                             Edubook là cửa hàng luôn cung cấp cho các bạn tìm tòi tri thức, đam mê đọc sách trên khắp cả
                             nước.Chúng tôi sẽ liên tục cập nhật những cuốn sách hay nhất, mới nhất, chất lượng nhất giúp
                             người đọc có những cuốn sách hay nhất để đọc! <br> <br> Điện thoại: 0352 860 701 <br> Email:
-                            teamed2@gmail.com <br> Zalo: 039.882.3232 <br>
+                            nhanntpc03225.com <br> Zalo: 0942 785 922 <br>
                         </div>
                     </article>
 
@@ -728,7 +728,7 @@
 
                             <div class="footer__top-contact-phone-wrap">
                                 <div class="footer__top-contact-phone">
-                                    039.882.3232
+                                0942 785 922
                                 </div>
                                 <div class="footer__top-contact-des">
                                     (Giải đáp thắc mắc 24/24)

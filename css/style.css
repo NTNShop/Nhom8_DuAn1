@@ -15,7 +15,7 @@
 
 body {
     font-size: 1.6rem;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -488,6 +488,9 @@ body {
 
 .login-form form button,
 .signup-form form button {
+    font-size: 10px;
+    width: 100px;
+    height: 30px;
     background: orangered;
     border: medium none;
     border-radius: 0;
@@ -521,13 +524,13 @@ body {
     width: 50px;
 }
 
-.userinfo{
-    
+.userinfo {
     display: flex;
     gap: 12px;
 }
+
 .userinfo p,
-.userinfo a{
-font-size: 1.6rem;
-color: #FFFFFF;
+.userinfo a {
+    font-size: 1.6rem;
+    color: #FFFFFF;
 }

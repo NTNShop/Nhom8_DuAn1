@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/category.css">
 </head>
 
 <body>
@@ -89,10 +90,10 @@
                             </div>
                             <div class="header__call-info">
                                 <div class="header__call-text">
-                                    Gọi điện tư vấn
+                                    <a href="contact.php">Gọi điện tư vấn</a> 
                                 </div>
                                 <div class="header__call-number">
-                                    039.882.3232
+                                0942 785 922
                                 </div>
                             </div>
                         </div>
@@ -149,7 +150,7 @@
                     <nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
                         <ul class="menu__list">
                             <li class="menu__item menu__item--active">
-                                <a href="#" class="menu__link">
+                                <a href="category.php" class="menu__link">
                                     <img src="images1/item/baby-boy.png" alt="" class="menu__item-icon" id="Capa_1"
                                         enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
                                         width="512"> Sách Tiếng Việt</a>
@@ -261,8 +262,8 @@
                             <div class="footer__top-intro-content">
                                 Edubook là cửa hàng luôn cung cấp cho các bạn tìm tòi tri thức, đam mê đọc sách trên
                                 khắp cả nước.Chúng tôi sẽ liên tục cập nhật những cuốn sách hay nhất, mới nhất, chất
-                                lượng nhất giúp người đọc có những cuốn sách hay nhất để đọc! <br> <br> Điện thoại: 0352
-                                860 701 <br> Email: teamed2@gmail.com <br> Zalo: 039.882.3232 <br>
+                                lượng nhất giúp người đọc có những cuốn sách hay nhất để đọc! <br> <br> Điện thoại: 0942 785 922 
+                                 <br> Email: nhanntpc03225@gmail.com <br> Zalo: 0942 785 922 <br>
                             </div>
                         </article>
 
@@ -302,7 +303,7 @@
 
                                 <div class="footer__top-contact-phone-wrap">
                                     <div class="footer__top-contact-phone">
-                                        039.882.3232
+                                    0942 785 922
                                     </div>
                                     <div class="footer__top-contact-des">
                                         (Giải đáp thắc mắc 24/24)
