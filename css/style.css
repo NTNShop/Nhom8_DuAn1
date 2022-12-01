@@ -99,7 +99,6 @@ body {
     border: none;
     border-radius: 0.2rem 0 0 0.2rem;
     border-right: 1px solid var(--border-color);
-    width: 10%;
     padding: 0 .6rem;
 }
 
@@ -119,25 +118,13 @@ body {
 }
 
 .header__search-btn {
-    width: 10%;
     height: 4rem;
     outline: none;
     border: none;
     border-radius: 0 2px 2px 0;
     font-size: 1.4rem;
     background: var(--white-color);
-}
-
-.header__search-icon-wrap {
-    width: 90%;
-    height: 3.4rem;
     background: #ef2317;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin-left: .2rem;
 }
 
 .header__search-icon {

@@ -32,10 +32,7 @@
                         <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
                             <ul class="header__top-list">
                                 <li class="header__top-item">
-                                    <a href="#" class="header__top-link">Đăng ký</a>
-                                </li>
-                                <li class="header__top-item">
-                                    <a href="#" class="header__top-link">Đăng nhập</a>
+                                    <a href="register.php" class="header__top-link">Đăng nhập</a>
                                 </li>
                             </ul>
                         </nav>
@@ -140,8 +137,8 @@
                             <!--login form-->
                             <h2>Đăng nhập vào tài khoản của bạn</h2>
                             <form action="xuly_login.php" method="post">
-                                <input name="ma_kh">
-                                <input name="mat_khau" type="password">
+                                <input name="ma_kh" placeholder="Mã Khách Hàng">
+                                <input name="mat_khau" placeholder="Mật Khẩu" type="password">
                                 <input name="ghi_nho" type="checkbox" checked>
                                 Ghi nhớ tài khoản?
                                 <button name="btn_login">Đăng nhập</button>
@@ -157,11 +154,11 @@
                             <!--sign up form-->
                             <h2>Đăng ký người dùng mới!</h2>
                             <form action="xuly-register.php" method="post" enctype="multipart/form-data">
-                                <input name="ma_kh" placeholder="Mã Khách Hàng">
-                                <input name="mat_khau" type="password" placeholder="Mật Khẩu">
-                                <input name="mat_khau2" type="password" placeholder="Nhập Lại Mật Khẩu">
                                 <input name="ho_ten" placeholder="Họ Tên">
                                 <input name="email" placeholder="Email">
+                                <input name="ma_kh" placeholder="Mã Khách Hàng">
+                                <input name="mat_khau" type="password" placeholder="Mật Khẩu">
+                                <input name="mat_khau2" type="password" placeholder="Nhập Lại Mật Khẩu">  
                                 <input name="up_hinh" type="file">
                                 <button name="btn_register">Đăng ký</button>
                                 <input name="vai_tro" value="0" type="hidden">
