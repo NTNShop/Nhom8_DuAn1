@@ -110,7 +110,7 @@ body {
 
 .header__search-input {
     height: 4rem;
-    width: 80%;
+    width: 90%;
     font-size: 1.4rem;
     outline: none;
     border: none;
@@ -125,6 +125,8 @@ body {
     font-size: 1.4rem;
     background: var(--white-color);
     background: #ef2317;
+    width: 70px;
+    border: 1px solid white;
 }
 
 .header__search-icon {
