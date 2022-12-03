@@ -23,7 +23,7 @@
                 $subtotal = $sp['don_gia'] * $sp['quantity'];
                 $total += $subtotal;
             ?>
-                <form class="cart-prod-item" action="" method="POST">
+                <form class="cart-prod-item" action="site/giohang-xuly.php?delcart" method="POST">
                     <input type="hidden" name="ma_hh" value="<?php echo $sp['ma_hh']; ?>">
                     <div class="col-6 cart__head-name">
                         <div class="prod-img">
@@ -48,9 +48,9 @@
                             <?php echo $sp['don_gia']; ?>đ
                         </span>
                     </div>
-                    <div class="row cart-item">
+                    <div class=" cart-item">
                         <div class="prod-action">
-                            <button class="delete-prod" name="delcart">x</button>
+                            <button class="delete-prod" type="submit" name="delcart">x</button>
                         </div>
                     </div>
                 </form>
