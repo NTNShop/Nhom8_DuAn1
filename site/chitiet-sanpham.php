@@ -29,7 +29,8 @@ extract($hh);
             </nav>
 
             <article class="product__main col-lg-9 col-md-12 col-sm-12">
-                <div class="row">
+                <form action="site/giohang-xuly.php" method="POST" class="row">
+                    <input type="hidden" name="ma_hh" value="<?= $ma_hh ?>">
                     <div class="product__main-img col-lg-4 col-md-4 col-sm-12">
                         <div class="product__main-img-primary">
                             <img src="content/images/products/<?= $hinh ?>">
@@ -43,7 +44,7 @@ extract($hh);
 
                         <a href="#" class="product__main-info-title">
                             <h2 class="product__main-info-heading">
-                            <?= $ten_hh ?>
+                                <?= $ten_hh ?>
                             </h2>
                         </a>
 
@@ -57,12 +58,12 @@ extract($hh);
 
                         <div class="product__main-info-price">
                             <span class="product__main-info-price-current">
-                            <?= $don_gia ?>đ
+                                <?= $don_gia ?>đ
                             </span>
                         </div>
 
                         <div class="product__main-info-description">
-                        <?= $mo_ta ?>
+                            <?= $mo_ta ?>
                         </div>
 
                         <div class="product__main-info-cart">
@@ -73,7 +74,7 @@ extract($hh);
                                 </div>-->
 
                             <div class="product__main-info-cart-btn-wrap">
-                                <button class="product__main-info-cart-btn">
+                                <button type="submit" name="addcart" class="product__main-info-cart-btn">
                                     Thêm vào giỏ hàng
                                 </button>
                             </div>
@@ -101,7 +102,7 @@ extract($hh);
 
                         </div>
                     </div>
-                </div>
+                </form>
 
                 <div class="row bg-white">
                     <div class="col-12 product__main-tab">
