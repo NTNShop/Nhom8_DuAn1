@@ -28,10 +28,10 @@ if (exist_param("btn_login")) {
             }
         } else {
             $MESSAGE = "Sai mật khẩu!";
-            echo "Password is not true!";
+            echo "Sai mật khẩu!";
         }
     } else {
-        echo "Username is not true or your account is unactive";
+        echo "Sai mã đăng nhập!";
         $MESSAGE = "Sai mã đăng nhập!";
     }
 } else {
