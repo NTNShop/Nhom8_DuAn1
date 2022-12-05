@@ -30,14 +30,14 @@
                             <use xlink:href="#stroked-home"></use>
                         </svg></a></li>
                 <li><a href="">Quản lý danh mục</a></li>
-                <li class="active">Sách Tiếng Việt</li>
+                <li class="active"><?= $ten_loai ?></li>
             </ol>
         </div>
         <!--/.row-->
 
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Danh mục:Sách Tiếng Việt</h1>
+                <h1 class="page-header">Danh mục: <?= $ten_loai ?></h1>
             </div>
         </div>
         <!--/.row-->
@@ -49,7 +49,7 @@
                             <form role="form" action="?danh-muc&btn_update" method="post">
                                 <div class="form-group">
                                     <label>Tên danh mục:</label>
-                                    <input type="text" name="ten_loai" required value="" class="form-control"
+                                    <input type="text" name="ten_loai" required value="<?= $ten_loai ?>" class="form-control"
                                         placeholder="Tên danh mục...">
                                         <input type="hidden" name="ma_loai" value="<?= $ma_loai ?>">
                                 </div>

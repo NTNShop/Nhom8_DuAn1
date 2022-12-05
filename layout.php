@@ -16,11 +16,21 @@
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/category.css">
     <link rel="stylesheet" href="css/cart.css">
+    <style>
+        .message {
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        
+    </style>
 </head>
 
 <body>
     <div class="app">
-
+        <div class="message">
+            <?php echo "" . $MESSAGE ?>
+        </div>
         <!--end header nav -->
         <?php require 'layout/header.php' ?>
         <!-- slide - menu list -->

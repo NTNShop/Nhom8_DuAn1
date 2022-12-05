@@ -48,6 +48,7 @@ if (exist_param('addcart')) {
 
     // lưu cookie 
     setcookie('cart', $product_data, time() +  3600 * 24 * 30 * 12, '/');
+    echo "<script>alert('them san pham thanh cong')</script>";
     header('location: ../index.php?chitiet-sanpham&ma_hh=' . $ma_hh);
 } else if (exist_param('updateqty')) {
     $ma_hh = $_POST['ma_hh'];
@@ -84,7 +85,8 @@ if (exist_param('addcart')) {
 
     $product_data = json_encode($cart_data);
     setcookie('cart', $product_data, time() + 3600 * 24 * 30 * 12, '/');
-    echo $product_data;
+    echo "<script>alert('them san pham thanh cong')</script>";
+    header('location: ../index.php?gio-hang');
 } else if (exist_param('delcart')) {
     if (isset($_COOKIE['cart'])) {
         $cookie_data = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";;
@@ -95,7 +97,9 @@ if (exist_param('addcart')) {
                 $product_data = json_encode($cart_data);
 
                 setcookie("cart", $product_data, time() +  3600 * 24 * 30 * 12, '/');
+                echo "<script>alert('them san pham thanh cong')</script>";
                 header('location: ../index.php?gio-hang');
+
             }
         }
     }
@@ -104,7 +108,9 @@ if (exist_param('addcart')) {
     if (isset($_COOKIE['cart'])) {
         setcookie("cart", "", time() -  3600 * 24 * 30 * 12, '/');
     }
+    echo "<script>alert('them san pham thanh cong')</script>";
     echo "Delete successfully";
 } else {
+    echo "<script>alert('them san pham thanh cong')</script>";
     echo 'something went wrong!';
 }

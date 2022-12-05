@@ -70,9 +70,9 @@ require "../dao/loai.php";
                             <div class="form-group">
                                 <label>Ảnh sản phẩm</label>
 
-                                <input required name="up_hinh" type="file">
+                                <input class="image-upload" required name="up_hinh" type="file">
                                 <br>
-                                <div>
+                                <div class="input-image">
                                     <img style="filter: drop-shadow(0 0 5px rgb(119, 119, 145));" width="80px" src="">
                                 </div>
                             </div>
@@ -114,7 +114,13 @@ require "../dao/loai.php";
 <a href="?san-pham&btn_list">Tất Cả Sản Phẩm</a>
     </div>
     <!--/.main-->
-    
+    <script>
+        const imageUpload = document.querySelector('.image-upload'),
+        inputImage = document.querySelector('.input-image img')
+        imageUpload.onchange = (e) => {
+            inputImage.src = ""+ e.target.value;
+        }
+    </script>
 </body>
 
 </html>

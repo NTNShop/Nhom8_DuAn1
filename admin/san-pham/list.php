@@ -16,62 +16,15 @@ require '../dao/loai.php';
 
     <!--Icons-->
     <script src="js/lumino.glyphs.js"></script>
-
-    <!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<![endif]-->
+    <style>
+        .product-imges {
+            object-fit: cover;
+        }
+    </style>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../index.php"><span>Edu</span>Book</a>
-                <ul class="user-menu">
-                    <li class="dropdown pull-right">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user">
-                                <use xlink:href="#stroked-male-user"></use>
-                            </svg> Admin <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#"><svg class="glyph stroked male-user">
-                                        <use xlink:href="#stroked-male-user"></use>
-                                    </svg> Hồ sơ</a></li>
-                            <li><a href="#"><svg class="glyph stroked cancel">
-                                        <use xlink:href="#stroked-cancel"></use>
-                                    </svg> Đăng xuất</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-        <ul class="nav menu">
-            <li><a href="category.php"><svg class="glyph stroked open folder">
-                        <use xlink:href="#stroked-open-folder" />
-                    </svg>Quản lý danh mục</a></li>
-            <li class="active"><a href="product.php"><svg class="glyph stroked bag">
-                        <use xlink:href="#stroked-bag"></use>
-                    </svg>Quản lý sản phẩm</a></li>
-            <li><a href="../index.php"><svg class="glyph stroked open folder">
-                        <use xlink:href="#stroked-open-folder" />
-                    </svg>Về EduBook</a></li>
-        </ul>
-
-    </div>
-    <!--/.sidebar-->
-
     <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
         <div class="row">
             <ol class="breadcrumb">
@@ -123,7 +76,7 @@ require '../dao/loai.php';
                                         <td><?= $i ?></td>
                                         <td><?= $ten_hh ?></td>
                                         <td><?= $don_gia ?> đ</td>
-                                        <td style="text-align: center"><img width="130" height="180" src="../content/images/products/<?= $hinh ?>" />
+                                        <td style="text-align: center"><img class="product-imges" width="130" height="180" src="../content/images/products/<?= $hinh ?>" />
                                         </td>
                                         <td><?= $mo_ta ?></td>
                                         <td><?php echo "" . loai_select_by_id($ma_loai)['ten_loai'] ?></td>

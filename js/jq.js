@@ -19,10 +19,6 @@
             $(".main__modal").hide();
         });
 
-        $(".product__panel-item").click(function(){
-            $(location).attr('href','product.php');
-        });
-
         // $(".product__main-img-list img").click(function(){
         //     $("product__main-img-primary img").attr('src','product.php');
         // });

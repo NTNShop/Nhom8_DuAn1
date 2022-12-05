@@ -20,6 +20,7 @@ if (exist_param("btn_insert")) {
         $ngay_nhap = null;
     
         hang_hoa_insert($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
+        echo "<script>alert('them san pham thanh cong')</script>";
         unset($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
         $MESSAGE = "Thêm mới thành công!";
     } catch (Exception $exc) {
@@ -50,8 +51,10 @@ if (exist_param("btn_insert")) {
         $ma_hh = $_GET['ma_hh'];
         hang_hoa_delete($ma_hh);
         $items = hang_hoa_select_all();
+        echo "<script>alert('them san pham thanh cong')</script>";
         $MESSAGE = "Xóa thành công!";
     } catch (Exception $exc) {
+        echo "<script>alert('them san pham thanh cong')</script>";
         $MESSAGE = "Xóa thất bại!";
     }
     $VIEW_NAME = "san-pham/list.php";

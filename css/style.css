@@ -536,3 +536,7 @@ body {
   font-size: 1.6rem;
   color: #ffffff;
 }
+
+.bill{
+  flex-direction: column-reverse;
+}

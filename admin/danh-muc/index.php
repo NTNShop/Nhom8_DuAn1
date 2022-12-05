@@ -7,6 +7,7 @@ if (exist_param("btn_insert")) {
     try {
         $ten_loai = $_POST['loai_hang'];
         loai_insert($ten_loai);
+        echo "<script>alert('them san pham thanh cong')</script>";
         unset($ten_loai, $ma_loai);
         $MESSAGE = "Thêm mới thành công!";
     } catch (Exception $exc) {
@@ -18,8 +19,10 @@ if (exist_param("btn_insert")) {
         $ma_loai = $_POST['ma_loai'];
         $ten_loai = $_POST['ten_loai'];
         loai_update($ma_loai, $ten_loai);
+        echo "<script>alert('them san pham thanh cong')</script>";
         $MESSAGE = "Cập nhật thành công!";
     } catch (Exception $exc) {
+        echo "<script>alert('them san pham thanh cong')</script>";
         $MESSAGE = "Cập nhật thất bại!";
     }
     $VIEW_NAME = "danh-muc/edit.php";

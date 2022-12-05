@@ -9,6 +9,8 @@ if (exist_param("san-pham")) {
     $VIEW_NAME = "site/gio-hang.php";
 }else if (exist_param("thanh-toan")) {
     $VIEW_NAME = "site/thanh-toan.php";
+}else if (exist_param("lich-su")) {
+    $VIEW_NAME = "site/lich-su.php";
 } else {
     // require_once 'dao/hang-hoa.php';
     // $items_all = hang_hoa_select_all();

@@ -69,7 +69,7 @@
             $ten_kh = $_SESSION['user']['ho_ten'] ? $_SESSION['user']['ho_ten'] : '';
             $email = $_SESSION['user']['email'] ? $_SESSION['user']['email'] : '';
             ?>
-            <form class="payment-form" action="">
+            <form class="payment-form" action="site/thanhtoan-xuly.php" method="POST">
                 <input type="hidden" name="ma_kh" value="<?php echo $ma_kh ?>">
                 <input type="hidden" name="ma_hh" value="<?php echo $ma_hh ?>">
                 <input type="hidden" name="total" value="<?php echo $total ?>">

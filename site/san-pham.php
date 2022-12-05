@@ -41,7 +41,8 @@ if (exist_param("ma_loai")) {
                 ?>
                     <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
                         <div class="product__panel-img-wrap">
-                            <img src="content/images/products/<?= $hinh ?>" alt="" class="product__panel-img">
+                            <a href="?chitiet-sanpham&ma_hh=<?= $ma_hh ?>" class="">
+                                <img src="content/images/products/<?= $hinh ?>" alt="" class="product__panel-img"></a>
                         </div>
                         <h3 class="product__panel-heading">
                             <a href="?chitiet-sanpham&ma_hh=<?= $ma_hh ?>" class="product__panel-link"><?= $ten_hh ?></a>
