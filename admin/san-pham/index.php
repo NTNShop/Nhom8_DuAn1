@@ -20,10 +20,11 @@ if (exist_param("btn_insert")) {
         $ngay_nhap = null;
     
         hang_hoa_insert($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
-        echo "<script>alert('them san pham thanh cong')</script>";
+        echo "<script>alert('Thêm sản phẩm thành công')</script>";
         unset($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
         $MESSAGE = "Thêm mới thành công!";
     } catch (Exception $exc) {
+        echo "<script>alert('Thêm sản phẩm thất bại')</script>";
         $MESSAGE = "Thêm mới thất bại!";
     }
     $VIEW_NAME = "san-pham/add.php";
@@ -42,8 +43,10 @@ if (exist_param("btn_insert")) {
         $ngay_nhap = null;
         hang_hoa_update($ma_hh, $ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
         $MESSAGE = "Cập nhật thành công!";
+        echo "<script>alert('Cập nhật thành công!')</script>";
     } catch (Exception $exc) {
         $MESSAGE = "Cập nhật thất bại!";
+        echo "<script>alert('Cập nhật thất bại!')</script>";
     }
     $VIEW_NAME = "san-pham/list.php";
 } else if (exist_param("btn_delete")) {
@@ -51,10 +54,10 @@ if (exist_param("btn_insert")) {
         $ma_hh = $_GET['ma_hh'];
         hang_hoa_delete($ma_hh);
         $items = hang_hoa_select_all();
-        echo "<script>alert('them san pham thanh cong')</script>";
+        echo "<script>alert('Xóa sản phẩm thành công!')</script>";
         $MESSAGE = "Xóa thành công!";
     } catch (Exception $exc) {
-        echo "<script>alert('them san pham thanh cong')</script>";
+        echo "<script>alert('Xóa sản phẩm thất bại')</script>";
         $MESSAGE = "Xóa thất bại!";
     }
     $VIEW_NAME = "san-pham/list.php";
