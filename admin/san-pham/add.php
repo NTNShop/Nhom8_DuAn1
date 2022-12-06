@@ -69,8 +69,8 @@ require "../dao/loai.php";
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Ảnh sản phẩm</label>
-
-                                <input class="image-upload" required name="up_hinh" type="file">
+                                <input name="up_hinh" type="file" accept="image/*" onchange="loadFile(event)">
+                                <img width="100" id="output"/>
                                 <br>
                                 <div class="input-image">
                                     <img style="filter: drop-shadow(0 0 5px rgb(119, 119, 145));" width="80px" src="">
@@ -120,6 +120,18 @@ require "../dao/loai.php";
         imageUpload.onchange = (e) => {
             inputImage.src = ""+ e.target.value;
         }
+
+        
+    </script>
+  
+    <script>
+        var loadFile = function(event) {
+            var output = document.getElementById('output');
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.onload = function() {
+            URL.revokeObjectURL(output.src) // free memory
+            }
+        };
     </script>
 </body>
 
