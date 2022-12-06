@@ -739,7 +739,7 @@
 
                         <div class="footer__top-contact">
                             <div class="footer__top-contact-icon">
-                                <img src="images/phone_top.png" class="footer__top-contact-img">
+                                <img src="images1/phone_top.png" class="footer__top-contact-img">
                             </div>
 
                             <div class="footer__top-contact-phone-wrap">
@@ -758,16 +758,16 @@
 
                         <div class="footer__top-contact-social">
                             <a href="#" class="footer__top-contact-social-link">
-                                <img src="images/facebook.png">
+                                <img src="images1/facebook.png">
                             </a>
                             <a href="#" class="footer__top-contact-social-link">
-                                <img src="images/youtube.png">
+                                <img src="images1/youtube.png">
                             </a>
                             <a href="#" class="footer__top-contact-social-link">
-                                <img src="images/tiktok.png">
+                                <img src="images1/tiktok.png">
                             </a>
                             <a href="#" class="footer__top-contact-social-link">
-                                <img src="images/zalo.png">
+                                <img src="images1/zalo.png">
                             </a>
                         </div>
                     </article>

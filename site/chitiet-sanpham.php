@@ -108,7 +108,7 @@ extract($hh);
             <aside class="product__aside col-lg-3 col-md-0 col-sm-0">
                 <div class="product__aside-top">
                     <div class="product__aside-top-item">
-                        <img src="images/shipper.png">
+                        <img src="images1/shipper.png">
                         <div class="product__aside-top-item-text">
                             <p>
                                 Giao hàng nhanh chóng
@@ -130,7 +130,7 @@ extract($hh);
                         </div>
                     </div>
                     <div class="product__aside-top-item">
-                        <img src="images/less.png">
+                        <img src="images1/less.png">
                         <div class="product__aside-top-item-text">
                             <p>
                                 Mua hàng tiết kiệm

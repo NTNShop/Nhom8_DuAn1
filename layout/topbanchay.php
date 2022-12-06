@@ -2,7 +2,6 @@
             <div class="container">
                 <div class="row">
                     <div class="bestselling__heading-wrap">
-                        <img src="images/bestselling.png" alt="Sản phẩm bán chạy" class="bestselling__heading-img">
                         <div class="bestselling__heading">Top bán chạy nhất tuần</div>
                     </div>
                 </div>
