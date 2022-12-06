@@ -64,10 +64,13 @@
 
                             <tbody>
                                 <?php
+                                $i = 0;
                                 $items = loai_select_all();
-                                foreach ($items as $item) { ?>
+                                foreach ($items as $item) {
+                                    $i++;
+                                ?>
                                     <tr>
-                                        <td style=""><?= $item['ma_loai'] ?></td>
+                                        <td style=""><?= $i ?></td>
                                         <td style=""><?= $item['ten_loai'] ?></td>
                                         <td class="form-group">
                                             <a href="?danh-muc&btn_edit&ma_loai=<?= $item['ma_loai'] ?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
@@ -82,7 +85,7 @@
 
                     </div>
                     <div class="panel-footer">
-                        <nav aria-label="Page navigation example">
+                        <!-- <nav aria-label="Page navigation example">
                             <ul class="pagination">
                                 <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
                                 <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -90,7 +93,7 @@
                                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                                 <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
                             </ul>
-                        </nav>
+                        </nav> -->
                     </div>
                 </div>
             </div>

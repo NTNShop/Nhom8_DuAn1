@@ -23,14 +23,14 @@
                 $subtotal = $sp['don_gia'] * $sp['quantity'];
                 $total += $subtotal;
             ?>
-                <form class="cart-prod-item" action="site/giohang-xuly.php?delcart" method="POST">
+                <form class="cart-prod-item" action="site/giohang-xuly.php" method="POST">
                     <input type="hidden" name="ma_hh" value="<?php echo $sp['ma_hh']; ?>">
                     <div class="col-6 cart__head-name">
                         <div class="prod-img">
-                            <img src="<?= $CONTENT_URL ?>/images/products/<?php echo $sp['hinh']; ?>" alt="">
+                            <img src="content/images/products/<?php echo $sp['hinh']; ?>" alt="">
                         </div>
                         <div class="prod-info">
-                            <p class="itemNumber">#QUE-007544-002</p>
+                            <p class="itemNumber">ID: <?php echo $sp['ma_hh']; ?></p>
                             <h3>
                                 <?php echo $sp['ten_hh']; ?>
                             </h3>
@@ -39,13 +39,13 @@
                     </div>
                     <div class="col-3 cart__head-quantity">
                         <p>
-                            <input class="quantityInp" type="number" name="quantity" class="qty product-qty" value='<?php echo $sp['quantity'] ?>' />
-
+                            <input type="number" name="quantity" class="quantityIn pqty product-qty" value='<?php echo $sp['quantity'] ?>' />
+                            <button class="delete-prod" type="submit" name="updateqty">update</button>
                         </p>
                     </div>
                     <div class="col-3 cart__head-price">
                         <span class="prod-price">
-                            <?php echo $sp['don_gia']; ?>đ
+                            <?php echo number_format($sp['don_gia'], 0); ?>đ
                         </span>
                     </div>
                     <div class=" cart-item">
@@ -67,7 +67,7 @@
             </div>
 
             <p class="col-3 col-lg-3 col-sm-3 cart__foot-total">
-                Tổng cộng: <?= $total ?>đ
+                Tổng cộng: <?= number_format($total, 0) ?>đ
             </p>
 
             <span class="col-3 col-lg-3 col-sm-3 cart__foot-price">

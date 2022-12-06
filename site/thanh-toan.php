@@ -21,10 +21,10 @@
                                 <input type="hidden" name="ma_hh" value="<?php echo $sp['ma_hh']; ?>">
                                 <div class="row payment-item">
                                     <div class="payment-img">
-                                        <img src="<?= $CONTENT_URL ?>/images/products/<?php echo $sp['hinh']; ?>" alt="">
+                                        <img src="content/images/products/<?php echo $sp['hinh']; ?>" alt="">
                                     </div>
                                     <div class="payment-info">
-                                        <p class="itemNumber">#QUE-007544-002</p>
+                                        <p class="itemNumber"><?php echo $sp['ma_hh']; ?></p>
                                         <h3><?php echo $sp['ten_hh']; ?></h3>
                                         <div class="size">SIZE: <span><?php echo (isset($sp['size']) ? $sp['size'] : ''); ?></span></div>
                                         <p>

@@ -75,7 +75,7 @@ require '../dao/loai.php';
                                     <tr>
                                         <td><?= $i ?></td>
                                         <td><?= $ten_hh ?></td>
-                                        <td><?= $don_gia ?> đ</td>
+                                        <td><?= number_format($don_gia,0) ?> đ</td>
                                         <td style="text-align: center"><img class="product-imges" width="130" height="180" src="../content/images/products/<?= $hinh ?>" />
                                         </td>
                                         <td><?= $mo_ta ?></td>

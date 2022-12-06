@@ -31,7 +31,7 @@ function loai_delete($ma_loai)
 // loai select all
 function loai_select_all()
 {
-    $sql = "SELECT * FROM loai";
+    $sql = "SELECT * FROM loai ORDER BY ma_loai DESC";
     return pdo_query($sql);
 }
 

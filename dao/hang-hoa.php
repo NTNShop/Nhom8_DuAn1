@@ -26,8 +26,8 @@ function hang_hoa_delete($ma_hh)
 
 function hang_hoa_select_all()
 {
-    $sql = "SELECT * FROM hang_hoa";
-    return pdo_query($sql);
+    $sql = "SELECT * FROM hang_hoa ORDER BY ma_hh DESC";
+    return pdo_query($sql);     
 }
 function hang_hoa_select_by_id($ma_hh)
 {

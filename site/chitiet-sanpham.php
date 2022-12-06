@@ -103,6 +103,9 @@ extract($hh);
                         </div>
                     </div>
                 </form>
+                <div class="binhluan">
+                    <?php require "layout/binh-luan.php"; ?>
+                </div>
             </article>
 
             <aside class="product__aside col-lg-3 col-md-0 col-sm-0">
