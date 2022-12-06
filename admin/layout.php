@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font  google -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
@@ -75,6 +75,15 @@
                 <li class=""><a href="?san-pham"><svg class="glyph stroked bag">
                             <use xlink:href="#stroked-bag"></use>
                         </svg>Quản lý sản phẩm</a></li>
+                <li class=""><a href="?san-pham"><svg class="glyph stroked bag">
+                            <use xlink:href="#stroked-bag"></use>
+                        </svg>Quản lý khách hàng</a></li>
+                <li class=""><a href="?binh-luan"><svg class="glyph stroked bag">
+                            <use xlink:href="#stroked-bag"></use>
+                        </svg>Quản lý bình luận</a></li>
+                <li class=""><a href="?san-pham"><svg class="glyph stroked bag">
+                            <use xlink:href="#stroked-bag"></use>
+                        </svg>Quản lý đơn hàng</a></li>
                 <li><a href="../index.php"><svg class="glyph stroked open folder">
                             <use xlink:href="#stroked-open-folder" />
                         </svg>Về EduBook</a></li>
