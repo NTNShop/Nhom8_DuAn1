@@ -8,6 +8,7 @@
                 </div>
 
                 <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+
                     <ul class="header__top-list">
                         <li class="header__top-item">
                             <?php
@@ -18,7 +19,7 @@
                                     <?php
                                     if ($_SESSION['user']['vai_tro'] == 1) echo '<a href="admin/">Vào Admin</a>' ?>
                                     <a href="xuly_login.php?btn_logoff">Đăng Xuất</a>
-
+                                    <a href="?lich-su">Xem lại lịch sử đặt hàng</a>
                                 </div>
                             <?php
                             } else {

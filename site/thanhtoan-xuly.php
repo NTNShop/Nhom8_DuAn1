@@ -34,7 +34,7 @@ if (exist_param('buy')) {
                         header('location: ./success.php');
                         if (isset($_COOKIE['cart'])) {
                             setcookie("cart", "", time() -  3600 * 24 * 30 * 12, '/');
-                            header('location: ./success.php');
+                            header('location: ../index.php?success');
                         }
                     }
                 }

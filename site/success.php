@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    hehehe
+    <h3>ĐẶT HÀNG THÀNH CÔNG</h3>
+    <a href="index.php">Quay lại trang chủ</a>
+    <a href="?lich-su">Xem lại lịch sử đặt hàng</a>
 </body>
 </html>
