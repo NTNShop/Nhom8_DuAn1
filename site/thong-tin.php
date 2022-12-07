@@ -12,7 +12,7 @@ extract($_SESSION['user']);
                                 <div class="m-b-25 user-avatar">
                                     <img src="content/images/users/<?= $hinh ?>" class="img-radius" alt="User-Profile-Image">
                                 </div>
-                                <h6 class="f-w-600"><?= $ho_ten ?></h6>
+                                <h6 class="f-w-600"><?= $ma_kh ?></h6>
                                 <p><?php echo ($vai_tro == 1) ? "Quản Trị Viên" : "Khách Hàng" ?></p>
                                 <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                             </div>
@@ -26,8 +26,8 @@ extract($_SESSION['user']);
                                         <h6 class="text-muted f-w-400"><?= $email ?></h6>
                                     </div>
                                     <div class="col-sm-6">
-                                        <p class="m-b-10 f-w-600"></p>
-                                        <h6 class="text-muted f-w-400"></h6>
+                                        <p class="m-b-10 f-w-600">Họ Tên</p>
+                                        <h6 class="text-muted f-w-400"><?= $ho_ten ?></h6>
                                     </div>
                                 </div>
 
