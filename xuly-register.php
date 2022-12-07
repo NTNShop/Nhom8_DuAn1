@@ -14,13 +14,13 @@ if (exist_param("btn_register")) {
         $MESSAGE = "Mã này đã được sử dụng!";
         echo "Username is already exist";
     } else {
-        $file_name = save_file("up_hinh", "$IMAGE_DIR/users/");
+        $file_name = save_file("up_hinh", "content/images/users/");
         $hinh = $file_name ? $file_name : "user.png";
         try {
             khach_hang_insert($ma_kh, $mat_khau, $ho_ten, $kich_hoat, $hinh, $email, $vai_tro);
             $MESSAGE = "Đăng ký thành viên thành công!";
             echo "Register successfull";
-            header("location: register.php");
+            header("location: ?register");
         } catch (Exception $exc) {
             $MESSAGE = "Đăng ký thành viên thất bại!";
             echo "Register fail";

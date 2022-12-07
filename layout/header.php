@@ -15,15 +15,14 @@
                             if (isset($_SESSION['user']) ? $_SESSION['user'] : '') {
                             ?>
                                 <div class="userinfo">
+                                    <a href="?thong-tin">Thông Tin</a>
                                     <p class=""><?php echo $_SESSION['user']['ho_ten'] ?> </p>
                                     <?php
                                     if ($_SESSION['user']['vai_tro'] == 1) echo '<a href="admin/">Vào Admin</a>' ?>
-                                    <a href="xuly_login.php?btn_logoff">Đăng Xuất</a>
-                                    <a href="?lich-su">Xem lại lịch sử đặt hàng</a>
                                 </div>
                             <?php
                             } else {
-                                echo '<a href="register.php" class="header__top-link">Đăng nhập</a>';
+                                echo '<a href="?register" class="header__top-link">Đăng nhập</a>';
                             }
                             ?>
                         </li>
@@ -118,13 +117,10 @@
                             </div>
                         </li>
                         <li class="header__nav-item">
-                            <a href="product.php" class="header__nav-link">Sản phẩm</a>
+                            <a href="?post" class="header__nav-link">Bài viết</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="post.php" class="header__nav-link">Bài viết</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="contact.php" class="header__nav-link">Liên hệ</a>
+                            <a href="?contact" class="header__nav-link">Liên hệ</a>
                         </li>
                     </ul>
                 </div>

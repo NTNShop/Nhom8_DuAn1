@@ -360,27 +360,6 @@ extract($hh);
             </aside>
 
         </div>
-
-        <div class="customer-reviews row pb-4 pb-4  py-4 pb-4 py-4 py-4">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <h3>Bình luận sản phẩm</h3>
-                <form id="formgroupcomment" method="post">
-                    <div class="form-group">
-                        <label>Tên:</label>
-                        <input name="comm_name" required="" type="text" id='form-name' class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Email:</label>
-                        <input name="comm_mail" required="" type="email" class="form-control" id="pwd">
-                    </div>
-                    <div class="form-group">
-                        <label>Nội dung:</label>
-                        <textarea name="comm_details" required="" rows="8" id='formcontent' class="form-control"></textarea>
-                    </div>
-                    <button type="submit" name="sbm" id="submitcomment" class="btn btn-primary">Gửi</button>
-                </form>
-            </div>
-        </div>
         <section class="product__love col-12 mt-4">
             <div class="row bg-white">
                 <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">

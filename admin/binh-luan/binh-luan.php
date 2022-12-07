@@ -44,7 +44,7 @@
         }
 
         .row-heading li {
-            background-color: black;
+            background-color: #f24137;
             color: white;
             padding: 12px;
 
@@ -83,7 +83,7 @@
                     <li><?= $ngay_binh_luan ?></li>
 
 
-                    <li><a href="binh-luan/index.php?btn_delete&ma_bl=<?= $ma_bl ?>"><i class="fa-regular fa-trash-can"></i></a></li>
+                    <li><a href="binh-luan/xoa.php?btn_delete&ma_bl=<?= $ma_bl ?>"><i class="fa-regular fa-trash-can"></i></a></li>
                 </ul>
             <?php } ?>
         </div>
