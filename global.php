@@ -4,10 +4,11 @@ session_start();
 /*
 * Định nghĩa các url cần thiết được sử dụng trong website
 */
-$ROOT_URL = "T-Coffee";
+$ROOT_URL = "..";
 $CONTENT_URL = "../../content";
 $ADMIN_URL = "$ROOT_URL/admin";
 $SITE_URL = "$ROOT_URL/site";
+$JS_URL = "$ROOT_URL/js";
 /*
 * Định nghĩa đường dẫn chứa ảnh sử dụng trong upload
 */

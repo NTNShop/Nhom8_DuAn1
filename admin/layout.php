@@ -13,11 +13,12 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/datepicker3.css" rel="stylesheet">
+    <link href="css/jquery.toast.min.css" rel="stylesheet">
     <link href="css/bootstrap-table.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
-    <script src="<?= $CONTENT_URL ?>/js/jquery.min.js" type="text/javascript"></script>
-
+    <script src="<?= $JS_URL ?>/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/jquery.toast.min.js" type="text/javascript"></script>
     <title>Admin Dashboard Panel</title>
 
     <style>
@@ -66,7 +67,7 @@
                 <li class=""><a href="?binh-luan"><svg class="glyph stroked bag">
                             <use xlink:href="#stroked-bag"></use>
                         </svg>Quản lý bình luận</a></li>
-                <li class=""><a href="?san-pham"><svg class="glyph stroked bag">
+                <li class=""><a href="?hoa-don"><svg class="glyph stroked bag">
                             <use xlink:href="#stroked-bag"></use>
                         </svg>Quản lý đơn hàng</a></li>
                 <li><a href="../index.php"><svg class="glyph stroked open folder">

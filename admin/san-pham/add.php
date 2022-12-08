@@ -1,7 +1,7 @@
 <?php
 require "../dao/loai.php";
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -12,20 +12,20 @@ require "../dao/loai.php";
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/datepicker3.css" rel="stylesheet">
     <link href="css/bootstrap-table.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> -->
 
     <!--Icons-->
-    <script src="js/lumino.glyphs.js"></script>
+    <!-- <script src="js/lumino.glyphs.js"></script> -->
 
     <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
 <script src="js/respond.min.js"></script>
 <![endif]-->
 
-</head>
+<!-- </head>
 
-<body>
-    <!--/.sidebar-->
+<body> -->
+    /.sidebar
 
     <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
         <div class="row">
@@ -61,7 +61,7 @@ require "../dao/loai.php";
                                 </div>
                                 <div class="form-group">
                                     <label>Khuyến mãi</label>
-                                    <input required name="giam_gia" type="number" min="0" class="form-control">
+                                    <input disabled required name="giam_gia" type="number" min="0" class="form-control">
                                 </div>
 
                         </div>
@@ -122,7 +122,43 @@ require "../dao/loai.php";
                 URL.revokeObjectURL(output.src) // free memory
             }
         };
-    </script>
-</body>
+        $('input[name=don_gia]').change(function() {
+            if($(this).val() != 0){
+                $('input[name=giam_gia]').removeAttr("disabled");
+            }else{
+                $('input[name=giam_gia]').addAttr("disabled");
+            }
+        // lam viec gi do
+        });
+        $('input[name=giam_gia]').change(function() {
+            var don_gia =  $('input[name=don_gia]').val();
+            if($(this).val() >= don_gia){
+                $.toast({
+                    text: "Sai roif chu oi", // Text that is to be shown in the toast
+                    heading: 'Note', // Optional heading to be shown on the toast
+                    icon: 'error', // Type of toast icon
+                    showHideTransition: 'fade', // fade, slide or plain
+                    allowToastClose: true, // Boolean value true or false
+                    hideAfter: 3000, // false to make it sticky or number representing the miliseconds as time after which toast needs to be hidden
+                    stack: 5, // false if there should be only one toast at a time or a number representing the maximum number of toasts to be shown at a time
+                    position: 'top-right', // bottom-left or bottom-right or bottom-center or top-left or top-right or top-center or mid-center or an object representing the left, right, top, bottom values
+                    
+                    
+                    
+                    textAlign: 'left',  // Text alignment i.e. left, right or center
+                    loader: true,  // Whether to show loader or not. True by default
+                    loaderBg: '#9EC600',  // Background color of the toast loader
+                    beforeShow: function () {}, // will be triggered before the toast is shown
+                    afterShown: function () {}, // will be triggered after the toat has been shown
+                    beforeHide: function () {}, // will be triggered before the toast gets hidden
+                    afterHidden: function () {}  // will be triggered after the toast has been hidden
+                });
+                    
+            }
+        // lam viec gi do
+        });
 
-</html>
+    </script>
+<!-- </body>
+
+</html> -->

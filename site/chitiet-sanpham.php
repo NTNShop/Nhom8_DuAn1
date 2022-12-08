@@ -58,7 +58,7 @@ extract($hh);
 
                         <div class="product__main-info-price">
                             <span class="product__main-info-price-current">
-                                <?= $don_gia ?>đ
+                                <?= number_format($don_gia, 0,',', '.') ?>đ
                             </span>
                         </div>
 
