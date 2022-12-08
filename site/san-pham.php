@@ -60,7 +60,7 @@ if (exist_param("ma_loai")) {
                                 80.000đ
                             </span>
                             <span class="product__panel-price-current">
-                                <?= number_format($don_gia, 0) ?>đ
+                            <?= number_format($don_gia, 0,'.', '.') ?>đ
                             </span>
                         </div>
                     </div>
