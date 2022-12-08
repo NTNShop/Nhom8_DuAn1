@@ -47,21 +47,6 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="../index.php"><span>Edu</span>Book</a>
-                    <ul class="user-menu">
-                        <li class="dropdown pull-right">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user">
-                                    <use xlink:href="#stroked-male-user"></use>
-                                </svg> Admin <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#"><svg class="glyph stroked male-user">
-                                            <use xlink:href="#stroked-male-user"></use>
-                                        </svg> Hồ sơ</a></li>
-                                <li><a href="#"><svg class="glyph stroked cancel">
-                                            <use xlink:href="#stroked-cancel"></use>
-                                        </svg> Đăng xuất</a></li>
-                            </ul>
-                        </li>
-                    </ul>
                 </div>
 
             </div><!-- /.container-fluid -->
@@ -75,7 +60,7 @@
                 <li class=""><a href="?san-pham"><svg class="glyph stroked bag">
                             <use xlink:href="#stroked-bag"></use>
                         </svg>Quản lý sản phẩm</a></li>
-                <li class=""><a href="?san-pham"><svg class="glyph stroked bag">
+                <li class=""><a href="?khach-hang"><svg class="glyph stroked bag">
                             <use xlink:href="#stroked-bag"></use>
                         </svg>Quản lý khách hàng</a></li>
                 <li class=""><a href="?binh-luan"><svg class="glyph stroked bag">
@@ -88,7 +73,6 @@
                             <use xlink:href="#stroked-open-folder" />
                         </svg>Về EduBook</a></li>
             </ul>
-
         </div>
         <div class="">
             <?php require $VIEW_NAME ?>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 require "../dao/loai.php";
 ?>
 <!DOCTYPE html>
@@ -30,7 +30,6 @@ require "../dao/loai.php";
     <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
         <div class="row">
             <ol class="breadcrumb">
-                <li><a href="#"><svg class="glyph stroked home">
                             <use xlink:href="#stroked-home"></use>
                         </svg></a></li>
                 <li><a href="">Quản lý sản phẩm</a></li>
@@ -70,7 +69,7 @@ require "../dao/loai.php";
                             <div class="form-group">
                                 <label>Ảnh sản phẩm</label>
                                 <input name="up_hinh" type="file" accept="image/*" onchange="loadFile(event)">
-                                <img width="100" id="output"/>
+                                <img width="100" id="output" />
                                 <br>
                                 <div class="input-image">
                                     <img style="filter: drop-shadow(0 0 5px rgb(119, 119, 145));" width="80px" src="">
@@ -81,10 +80,10 @@ require "../dao/loai.php";
                                 <select name="loai_hang" class="form-control">
                                     <?php
                                     $danhmuc = loai_select_all();
-                                    foreach($danhmuc as $dm) :
+                                    foreach ($danhmuc as $dm) :
                                         extract($dm);
                                     ?>
-                                    <option value="<?= $ma_loai ?>"><?= $ten_loai ?></option>
+                                        <option value="<?= $ma_loai ?>"><?= $ten_loai ?></option>
                                     <?php endforeach ?>
                                 </select>
                             </div>
@@ -111,25 +110,16 @@ require "../dao/loai.php";
             <!-- /.col-->
         </div>
         <!-- /.row -->
-<a href="?san-pham&btn_list">Tất Cả Sản Phẩm</a>
+        <a href="?san-pham&btn_list">Tất Cả Sản Phẩm</a>
     </div>
     <!--/.main-->
-    <script>
-        const imageUpload = document.querySelector('.image-upload'),
-        inputImage = document.querySelector('.input-image img')
-        imageUpload.onchange = (e) => {
-            inputImage.src = ""+ e.target.value;
-        }
 
-        
-    </script>
-  
     <script>
         var loadFile = function(event) {
             var output = document.getElementById('output');
             output.src = URL.createObjectURL(event.target.files[0]);
             output.onload = function() {
-            URL.revokeObjectURL(output.src) // free memory
+                URL.revokeObjectURL(output.src) // free memory
             }
         };
     </script>
