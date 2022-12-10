@@ -58,7 +58,7 @@ extract($hh);
 
                         <div class="product__main-info-price">
                             <span class="product__main-info-price-current">
-                                <?= number_format($don_gia, 0,',', '.') ?>đ
+                                <?= number_format($don_gia, 0,'.', '.') ?>đ
                             </span>
                         </div>
 
@@ -229,132 +229,9 @@ extract($hh);
                             </div>
                         </div>
 
-                        <div class="product__aside-item">
-                            <div class="product__aside-img-wrap">
-                                <img src="images1/product/image_188285.jpg" class="product__aside-img">
-                            </div>
-                            <div class="product__aside-title">
-                                <a href="#" class="product__aside-link">
-                                    <h4 class="product__aside-link-heading">Chuyện Con Mèo Dạy Hải Âu Bay</h4>
-                                </a>
+                        
 
-                                <div class="product__aside-rate-wrap">
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                </div>
-
-                                <div class="product__aside-price">
-                                    <span class="product__aside-price-current">
-                                        34.300đ
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="product__aside-item">
-                            <div class="product__aside-img-wrap">
-                                <img src="images1/product/8936186542176.jpg" class="product__aside-img">
-                            </div>
-                            <div class="product__aside-title">
-                                <a href="#" class="product__aside-link">
-                                    <h4 class="product__aside-link-heading">Tôi Thích Một Cô Gái Nhưng Không Dám Ngỏ
-                                        Lời</h4>
-                                </a>
-
-                                <div class="product__aside-rate-wrap">
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                </div>
-
-                                <div class="product__aside-price">
-                                    <span class="product__aside-price-current">
-                                        70.000đ
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="product__aside-item">
-                            <div class="product__aside-img-wrap">
-                                <img src="images1/product/biamem.jpg" class="product__aside-img">
-                            </div>
-                            <div class="product__aside-title">
-                                <a href="#" class="product__aside-link">
-                                    <h4 class="product__aside-link-heading">Con Chim Xanh Biếc Bay Về - Tặng Kèm 6
-                                    </h4>
-                                </a>
-
-                                <div class="product__aside-rate-wrap">
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                </div>
-
-                                <div class="product__aside-price">
-                                    <span class="product__aside-price-current">
-                                        112.500đ
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="product__aside-item">
-                            <div class="product__aside-img-wrap">
-                                <img src="images1/product/8936049524905.jpg" class="product__aside-img">
-                            </div>
-                            <div class="product__aside-title">
-                                <a href="#" class="product__aside-link">
-                                    <h4 class="product__aside-link-heading">5 Centimet Trên Giây</h4>
-                                </a>
-
-                                <div class="product__aside-rate-wrap">
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                </div>
-
-                                <div class="product__aside-price">
-                                    <span class="product__aside-price-current">
-                                        39.500đ
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="product__aside-item">
-                            <div class="product__aside-img-wrap">
-                                <img src="images1/product/bia1_tobinhyen_2_1_1.jpg" class="product__aside-img">
-                            </div>
-                            <div class="product__aside-title">
-                                <a href="#" class="product__aside-link">
-                                    <h4 class="product__aside-link-heading">Tô Bình Yên Vẽ Hạnh Phúc</h4>
-                                </a>
-
-                                <div class="product__aside-rate-wrap">
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                    <i class="fas fa-star product__aside-rate"></i>
-                                </div>
-
-                                <div class="product__aside-price">
-                                    <span class="product__aside-price-current">
-                                        63.960đ
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </aside>
