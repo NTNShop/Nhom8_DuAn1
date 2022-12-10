@@ -20,6 +20,7 @@ if (exist_param("btn_register")) {
         $hinh = $file_name ? $file_name : "user.webp";
         try {
             khach_hang_insert($ma_kh, $mat_khau, $ho_ten, $kich_hoat, $hinh, $email, $vai_tro);
+            echo "<script>alert('them san pham thanh cong')</script>";
             $MESSAGE = "Đăng ký thành viên thành công!";
             echo "Register successfull";
             header("location: index.php?register");

@@ -29,9 +29,6 @@ if (exist_param("ma_loai")) {
         <div class="container">
             <div class="row bg-white">
                 <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
-                    <h2 class="product__love-heading upper">
-                        Sách Tiếng Việt
-                    </h2>
                 </div>
             </div>
             <div class="row bg-white prod-wrap">
