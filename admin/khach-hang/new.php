@@ -32,6 +32,14 @@
             text-decoration: none;
 
         }
+        .row{
+            width: 500px;
+            position: relative;
+            left: 350px;
+        }
+        input{
+            width: 200px;
+        }
     </style>
 </head>
 
@@ -88,7 +96,7 @@
             </form>
         </div>
         <div class="row">
-        <a href="?khach-hang&btn_list">Tất Cả Tai Khoan</a>
+        <a href="?khach-hang&btn_list">Tất Cả Tài Khoản</a>
         </div>
     </div>
 </body>

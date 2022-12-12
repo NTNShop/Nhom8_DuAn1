@@ -20,7 +20,20 @@ if (!isset($_SESSION['user'])) {
     echo "<b>Đăng nhập để bình luận về sản phẩm này</b>";
 } else {
 ?>
-    <form action="index.php?chitiet-sanpham&ma_hh=<?= $ma_hh ?>" method="post">
-        <input name="noi_dung" placeholder="write a comment" /><button>Send</button>
+    <form class="binh_luan" action="index.php?chitiet-sanpham&ma_hh=<?= $ma_hh ?>" method="post">
+        <input class="gui" name="noi_dung" placeholder="    write a comment" /><button class="send">Gửi</button>
     </form>
 <?php } ?>
+<style>
+.send{
+    width: 50px;
+    padding-left: 5px;
+    background-color: orangered;
+    color: white;
+}
+.gui{
+    width: 50%;
+    border: 2px solid black;
+    
+}
+</style>

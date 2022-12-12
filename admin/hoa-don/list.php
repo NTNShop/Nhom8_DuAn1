@@ -29,7 +29,7 @@
             background-color: black;
             color: white;
             padding: 5px;
-
+            width: 200px;
 
         }
 

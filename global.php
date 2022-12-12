@@ -17,7 +17,7 @@ $IMAGE_DIR = "../content/images";
 * 2 biến toàn cục cần thiết để chia sẻ giữa controller và view
 */
 $VIEW_NAME = "index.php";
-$MESSAGE = "hehehe";
+$MESSAGE = "";
 
 /**
  * Kiểm tra sự tồn tại của một tham số trong request
