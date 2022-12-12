@@ -21,6 +21,10 @@ if (exist_param("san-pham")) {
     $VIEW_NAME = "site/register.php"; 
 }else if (exist_param("thong-tin")) {
     $VIEW_NAME = "site/thong-tin.php"; 
+}else if (exist_param("doi-mk")) {
+    $VIEW_NAME = "site/doi-mk.php"; 
+}else if (exist_param("capnhat-taikhoan")) {
+    $VIEW_NAME = "site/capnhat-taikhoan.php"; 
 } else {
     // require_once 'dao/hang-hoa.php';
     // $items_all = hang_hoa_select_all();

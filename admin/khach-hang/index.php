@@ -21,7 +21,7 @@ if (exist_param("btn_insert")) {
             $ma_kh = $_POST['ma_kh'];
             $mat_khau = $_POST['mat_khau'];
             $ho_ten = $_POST['ho_ten'];
-            $up_hinh = save_file("hinh", "$IMAGE_DIR/users/");
+            $up_hinh = save_file("hinh", "../$IMAGE_DIR/users/");
             $hinh = strlen(".$up_hinh.") > 0 ? $up_hinh : 'user.png';
             $kich_hoat = $_POST['kich_hoat'];
             $email = $_POST['email'];
@@ -45,7 +45,7 @@ if (exist_param("btn_insert")) {
         $ma_kh = $_POST['ma_kh'];
         $mat_khau = $_POST['mat_khau'];
         $ho_ten = $_POST['ho_ten'];
-        $up_hinh = save_file("up_hinh", "$IMAGE_DIR/users/");
+        $up_hinh = save_file("up_hinh", "../$IMAGE_DIR/users/");
         $hinh = strlen(".$up_hinh.") > 0 ? $up_hinh : $hinh;
         $kich_hoat = $_POST['kich_hoat'];
         $email = $_POST['email'];

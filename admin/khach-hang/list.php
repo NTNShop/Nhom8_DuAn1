@@ -140,7 +140,7 @@
                 <li class="ho-ten"><?= $item['ho_ten'] ?></li>
 
                 <li class="user-image">
-                    <img src="<?= "$IMAGE_DIR/users/" . $item['hinh'] ?>" alt="">
+                    <img src="../<?= "$IMAGE_DIR/users/" . $item['hinh'] ?>" alt="">
                 </li>
                 <li class="email"><?= $item['email'] ?></li>
                 <li class="vai-tro"><?= ($item['vai_tro'] == 1) ? "Admin" : "Customer" ?></li>

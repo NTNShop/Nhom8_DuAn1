@@ -21,7 +21,7 @@
 <body>
     <div class="app">
         <!--end header nav -->
-
+<p><?php echo $MESSAGE ?> </p>
         <section id="form">
             <!--form-->
             <div class="container">

@@ -11,13 +11,13 @@ $SITE_URL = "$ROOT_URL/site";
 $JS_URL = "$ROOT_URL/js";
 /*
 * Định nghĩa đường dẫn chứa ảnh sử dụng trong upload
-*/
-$IMAGE_DIR = "../content/images";
+*/  
+$IMAGE_DIR = "content/images";
 /*
 * 2 biến toàn cục cần thiết để chia sẻ giữa controller và view
 */
 $VIEW_NAME = "index.php";
-$MESSAGE = "";
+global $MESSAGE ;
 
 /**
  * Kiểm tra sự tồn tại của một tham số trong request

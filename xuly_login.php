@@ -28,12 +28,12 @@ if (exist_param("btn_login")) {
             }
         } else {
             $MESSAGE = "Sai mật khẩu!";
-            echo "<script>alert('them san pham thanh cong')</script>";
+            echo "<script>alert('Sai mật khẩu')</script>";
             header("location: index.php?register");
         }
     } else {
-        echo "<script>alert('them san pham thanh cong')</script>";
-        header("location index.php?register");
+        echo "<script>alert('Sai mã đăng nhập!')</script>";
+        header("location:  index.php?register");
         $MESSAGE = "Sai mã đăng nhập!";
     }
 } else {
