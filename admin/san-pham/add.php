@@ -56,7 +56,7 @@ require "../dao/loai.php";
 
                                 <div class="form-group">
                                     <label>Giá sản phẩm</label>
-                                    <input required name="don_gia" type="number" min="0" class="form-control">
+                                    <input required name="don_gia" type="number" min="0" class="form-control ">
                                 </div>
                                 <div class="form-group">
                                     <label>Khuyến mãi</label>
@@ -133,7 +133,7 @@ require "../dao/loai.php";
             var don_gia =  $('input[name=don_gia]').val();
             if($(this).val() >= don_gia){
                 $.toast({
-                    text: "Sai roif chu oi", // Text that is to be shown in the toast
+                    text: "thoai", // Text that is to be shown in the toast
                     heading: 'Note', // Optional heading to be shown on the toast
                     icon: 'error', // Type of toast icon
                     showHideTransition: 'fade', // fade, slide or plain

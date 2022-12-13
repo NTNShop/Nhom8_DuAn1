@@ -17,7 +17,7 @@
     <link href="css/bootstrap-table.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
-
+    <script src="js/lumino.glyphs.js"></script>
     <script src="<?= $JS_URL ?>/jquery-3.3.1.js" type="text/javascript"></script>
     <script src="js/jquery.toast.min.js" type="text/javascript"></script>
     <title>Admin Dashboard Panel</title>
