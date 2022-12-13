@@ -26,15 +26,15 @@
                 <form class="cart-prod-item" action="site/giohang-xuly.php" method="POST">
                     <input type="hidden" name="ma_hh" value="<?php echo $sp['ma_hh']; ?>">
                     <div class="col-6 cart__head-name">
-                        <div class="prod-img">
-                            <img src="content/images/products/<?php echo $sp['hinh']; ?>" alt="">
-                        </div>
                         <div class="prod-info">
                             <p class="itemNumber">ID: <?php echo $sp['ma_hh']; ?></p>
                             <h3>
                                 <?php echo $sp['ten_hh']; ?>
                             </h3>
-
+                            
+                        </div>
+                        <div class="prod-img">
+                            <img src="content/images/products/<?php echo $sp['hinh']; ?>" alt="">
                         </div>
                     </div>
                     <div class="col-3 cart__head-quantity">

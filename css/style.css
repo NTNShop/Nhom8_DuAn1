@@ -540,3 +540,14 @@ body {
 .bill{
   flex-direction: column-reverse;
 }
+.prod-img{
+  width: 240px;
+  height: 160px;
+  overflow: hidden;
+  
+}
+.prod-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
