@@ -14,6 +14,6 @@ if (exist_param("san-pham")) {
 } else if (exist_param("thong-ke")) {
     $VIEW_NAME = "thong-ke/index.php";
 } else {
-    $VIEW_NAME = "home.php";
+    $VIEW_NAME = "thong-ke/index.php";
 }
 require './layout.php';

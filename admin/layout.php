@@ -17,6 +17,7 @@
     <link href="css/bootstrap-table.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
+
     <script src="<?= $JS_URL ?>/jquery-3.3.1.js" type="text/javascript"></script>
     <script src="js/jquery.toast.min.js" type="text/javascript"></script>
     <title>Admin Dashboard Panel</title>
@@ -67,6 +68,9 @@
                 <li class=""><a href="?binh-luan"><svg class="glyph stroked bag">
                             <use xlink:href="#stroked-bag"></use>
                         </svg>Quản lý bình luận</a></li>
+                <li class=""><a href="?thong-ke"><svg class="glyph stroked bag">
+                            <use xlink:href="#stroked-bag"></use>
+                        </svg>Quản lý thống kê</a></li>
                 <li class=""><a href="?hoa-don"><svg class="glyph stroked bag">
                             <use xlink:href="#stroked-bag"></use>
                         </svg>Quản lý đơn hàng</a></li>
