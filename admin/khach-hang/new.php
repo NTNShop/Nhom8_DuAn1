@@ -36,9 +36,18 @@
             width: 500px;
             position: relative;
             left: 350px;
+            top: 20px;
         }
         input{
             width: 200px;
+        }
+        .add{
+            border-radius: 4px; 
+            width: 70px;
+            height: 50px;
+            background-color: orangered;
+            color: white;
+            border: 1px solid white;
         }
     </style>
 </head>
@@ -48,29 +57,29 @@
         <div class="row">
             <form action="?khach-hang&btn_insert" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="">Username</label>
+                    <label for="">Username:</label>
                     <input type="text" name="ma_kh">
                 </div>
                 <div class="form-group">
-                    <label for="">Name</label>
+                    <label for="">Name:</label> &ensp;&ensp;&ensp;&ensp;
                     <input type="text" name="ho_ten">
                 </div>
                 <div class="form-group">
-                    <label for="">Password</label>
-                    <input type="text" name="mat_khau">
+                    <label for="">Password:</label> 
+                      <input type="text" name="mat_khau">
                 </div>
 
                 <div class="form-group">
-                    <label for="">Image</label>
+                    <label for="">Image:</label>
                     <input type="file" name="hinh">
                 </div>
                 <div class="form-group">
-                    <label for="">Email</label>
+                    <label for="">Email:</label> &ensp;&ensp;&ensp;&ensp;
                     <input type="email" name="email" />
                 </div>
 
                 <div class="form-group">
-                    <label for="">Position</label>
+                    <label for="">Position:</label>
                     <div class="vai-tro-form">
                         <div>
                             <input type="radio" name="vai_tro" value="1">
@@ -91,7 +100,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <button type="submit" name="btn_insert">Add</button>
+                    <button type="submit" class="add" name="btn_insert">Add</button>
                 </div>
             </form>
         </div>

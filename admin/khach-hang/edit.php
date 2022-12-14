@@ -24,13 +24,30 @@
 
     .btn {
         border-radius: 4px;
-        border: 1px solid red;
+        border: 1px solid white ;
         padding: 12px 24px;
-        background-color: #000;
+        background-color: orangered;
         color: white;
         text-decoration: none;
 
     }
+    .row{
+            width: 500px;
+            position: relative;
+            left: 350px;
+            top: 20px;
+        }
+        input{
+            width: 200px;
+        }
+        .up{
+            border-radius: 4px; 
+            width: 70px;
+            height: 40px;
+            background-color: orangered;
+            color: white;
+            border: 1px solid white;
+        }
     
     </style>
 </head>
@@ -40,11 +57,11 @@
         <div class="row">
             <form action="?khach-hang&btn_update" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="">Custome code</label>
+                    <label for="">Custome code:</label>
                     <input type="text" name="ma_kh" value='<?= $ma_kh ?>'>
                 </div>
                 <div class="form-group">
-                    <label for="">Password</label>
+                    <label for="">Password:</label>
                     <input type="text" name="mat_khau" value='<?= $mat_khau ?>'>
                 </div>
                 <div class="form-group">
@@ -53,7 +70,7 @@
                     <input name="hinh" value="<?= $hinh ?>">
                 </div>
                 <div class="form-group">
-                    <label for="">Name</label>
+                    <label for="">Name:</label>
                     <input type="text" name="ho_ten" value="<?= $ho_ten ?>" />
                 </div>
                 <div class="form-group">
@@ -64,7 +81,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="">Email</label>
+                    <label for="">Email:</label>
                     <input type="email" name="email" value='<?= $email ?>'>
                 </div>
                 <div class="form-group">
@@ -82,7 +99,7 @@
                 </div>
                 <div class="form-group">
                     <input type="hidden" name="ma_kh" value="<?= $ma_kh ?>">
-                    <button type="submit" name="btn_update">Update</button>
+                    <button type="submit" class="up" name="btn_update">Update</button>
                 </div>
             </form>
         </div>

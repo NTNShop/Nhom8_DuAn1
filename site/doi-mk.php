@@ -1,3 +1,23 @@
+<style>
+    .user-change-password{
+        width: 500px;
+            position: relative;
+            left: 200px;
+            top: 20px;
+            padding-bottom: 30px;
+    }
+    .form-group input{
+        width: 250px;
+    }
+    .form-group button{
+        width: 100px;
+        height: 50px;
+        background-color: orangered;
+        color: white;
+        border-radius: 4px;
+        border: 1px solid white;
+    }
+</style>
 <?php
 // require '../../pdo.php';
 // require '../../global.php';
@@ -51,23 +71,23 @@ if (exist_param("btn_change")) {
     </div>
     <form class="change-password-form" action="" method="post">
         <div class="form-group">
-            <label for="">Username</label>
+            <label for="">Username:</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
             <input name="ma_kh">
         </div>
         <div class="form-group">
-            <label for="">Password</label>
+            <label for="">Password:</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
             <input name="mat_khau" type="password">
         </div>
         <div class="form-group">
-            <label for="">New Password</label>
+            <label for="">New Password:</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
             <input name="mat_khau2" type="password">
         </div>
         <div class="form-group">
-            <label for="">Confirm New Password</label>
+            <label for="">Confirm New Password:</label>
             <input name="mat_khau3" type="password">
         </div>
         <div class="form-group">
-            <button name="btn_change">change</button>
+            <button name="btn_change">Change</button>
         </div>
     </form>
 </div>

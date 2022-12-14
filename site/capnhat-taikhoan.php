@@ -1,3 +1,23 @@
+<style>
+    .user-update-account{
+        width: 500px;
+            position: relative;
+            left: 200px;
+            top: 20px;
+            padding-bottom: 30px;
+    }
+    .form-group input{
+        width: 250px;
+    }
+    .form-group button{
+        width: 100px;
+        height: 50px;
+        background-color: orangered;
+        color: white;
+        border-radius: 4px;
+        border: 1px solid white;
+    }
+</style>
 <?php 
 // require '../../pdo.php';
 // require '../../global.php';
@@ -46,15 +66,15 @@ extract($_SESSION['user']) ?>
             <img src="<?= $IMAGE_DIR ?>/users/<?= $hinh ?>">
         </div>
         <div class="form-group">
-            <label for="">Username</label>
+            <label for="">Username:</label>
             <input name="ma_kh" value="<?= $ma_kh ?>" readonly>
         </div>
         <div class="form-group">
-            <label for="">Name</label>
+            <label for="">Name:</label> &ensp;&ensp;
             <input name="ho_ten" value="<?= $ho_ten ?>">
         </div>
         <div class="form-group">
-            <label for="">Email</label>
+            <label for="">Email:</label>&ensp;&ensp;&ensp;
             <input type="email" name="email" value="<?= $email ?>">
         </div>
         <div class="form-group">
