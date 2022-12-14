@@ -25,7 +25,7 @@
 
 
         .row-heading li {
-            background-color: black;
+            background-color: #f24137;
             color: white;
             padding: 5px;
             width: 200px;
