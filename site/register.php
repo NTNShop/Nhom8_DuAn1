@@ -16,6 +16,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/category.css">
+    <style>
+        .login-form form .ghi_nho{
+            width: 30px;
+            height: 40px;
+            background-color: red;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -33,8 +41,7 @@
                             <form action="xuly_login.php" method="post">
                                 <input name="ma_kh" placeholder="Mã Khách Hàng">
                                 <input name="mat_khau" placeholder="Mật Khẩu" type="password">
-                                <input name="ghi_nho" type="checkbox" checked>
-                                Ghi nhớ tài khoản?
+                              Ghi nhớ tài khoản?<input class="ghi_nho" name="ghi_nho" type="checkbox" checked>
                                 <button name="btn_login">Đăng nhập</button>
                             </form>
                         </div>
