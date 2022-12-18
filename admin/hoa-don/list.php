@@ -22,8 +22,11 @@
             padding: unset;
             margin: unset;
         }
-
-
+        .update-status-form{
+            position: relative;
+            right: 55px;
+            
+        }
         .row-heading li {
             background-color: #f24137;
             color: white;
@@ -59,6 +62,33 @@
             width: 100%;
             display: flex;
             list-style: none;
+            padding-left: 40px;
+        }
+        .total_sl{
+            position: relative;
+            left: 210px;
+            bottom: 40px;
+        }
+        .user-info{
+            position: relative;
+            left: 140px;
+            
+        }
+        .user-info ul li{
+            list-style: disc; 
+        }
+        .products{
+            position: relative;
+            left: 30px;
+        }
+        .receipt-item{
+            position: relative;
+            left: 100px;
+        }
+        .products ul li {
+            position: relative;
+            left: 100px;
+            list-style: none;   
         }
     </style>
 </head>
@@ -93,8 +123,8 @@
                     <input type="hidden" name="ghi_chu" value="<?= $ghi_chu ?>">
                     <input type="hidden" name="ngay_tao" value="<?= $ngay_tao ?>">
                     <ul class="prod_item ">
-                        <li class="id"><?= $ma_hd ?></li>
-                        <li class="user-info">
+                        <li class="id"><?= $ma_hd ?></li> 
+                        <li class="user-info"> 
                             <ul>
                                 <li><?= $ho_ten ?></li>
                                 <li><?= $so_dien_thoai ?></li>
@@ -110,15 +140,15 @@
                                     <li>
                                         <div class="receipt-item">
                                             <div class="info">
-                                                <h4><a style="text-decoration: none;" href="../index.php?chitiet-sanpham&ma_hh=<?= $x["ma_hh"] ?>" target="_blank" rel="noopener noreferrer"><?= $x['ten_hh'] ?></a>
-                                                    <span style="font-weight: lighter; color: #555;">/</span> <span class="size"> <?php echo ($x['size']) ? $x['size'] : '' ?></span>
+                                                <h4><a style="text-decoration: none; color: gray; font-size:15px;" href="../index.php?chitiet-sanpham&ma_hh=<?= $x["ma_hh"] ?>" target="_blank" rel="noopener noreferrer"><?= $x['ten_hh'] ?></a>
+                                                    <span style="font-weight: lighter; color: #555; "></span> <span class="size"> <?php echo ($x['size']) ? $x['size'] : '' ?></span>
                                                 </h4>
                                                 <div class="qty">
 
-                                                    <p class="subtotal">
+                                                <p class="subtotal">
                                                         $<?= $x['don_gia'] ?>
                                                     </p>
-                                                    <span>
+                                                    <span class="total_sl">
                                                         x<?= $x['so_luong'] ?>
                                                     </span>
                                                 </div>
@@ -131,7 +161,8 @@
                                 <?php endforeach ?>
                             </ul>
                         </li>
-                        <li class="total">$<?= $total ?></li>
+                        <!-- <li class="total">$<?= $total ?></li> -->
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;   &emsp;&emsp;&emsp;  
                         <li class="status">
                             <select name="trang_thai" id="">
                                 <option value="0" <?php echo ($trang_thai == 0) ? "selected" : "" ?>>Chưa Xác Nhận</option>
