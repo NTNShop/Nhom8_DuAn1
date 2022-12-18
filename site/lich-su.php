@@ -52,7 +52,7 @@ if ($listBill == null) {
                             </tr>
                             <tr>
                                 <td>Tổng:</td>
-                                <td><?= number_format($bill['total'], 2) ?>đ</td>
+                                <td><?= number_format($bill['total']) ?>đ</td>
                             </tr>
                         </tbody>
                     </table>
@@ -80,8 +80,8 @@ if ($listBill == null) {
                                     <tr>
                                         <td><a style="text-decoration: none;" href="?chitiet-sanpham&ma_hh=<?= $x["ma_hh"] ?>" target="_blank" rel="noopener noreferrer"><?= $x['ten_hh'] ?></a></td>
                                         <td><?= $x['so_luong'] ?></td>
-                                        <td><?= number_format($x['don_gia'], 2) ?>đ</td>
-                                        <td><?= number_format($x['don_gia'] * $x['so_luong'], 2) ?>đ</td>
+                                        <td><?= number_format($x['don_gia']) ?>đ</td>
+                                        <td><?= number_format($x['don_gia'] * $x['so_luong']) ?>đ</td>
                                     </tr>
                                 <?php endforeach ?>
                             </tbody>

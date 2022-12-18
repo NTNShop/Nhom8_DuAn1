@@ -14,7 +14,7 @@
                         $total = 0;
                         foreach ($cart_data as $sp) :
                             $giam_gia = $sp['giam_gia'] ? $sp['giam_gia'] : 0;
-                            $subtotal = ($sp['don_gia'] - (($sp['don_gia'] * $giam_gia) / 100)) * $sp['quantity'];
+                            $subtotal = ( (($sp['don_gia'] * $giam_gia) / 100)) * $sp['quantity'];
                             $total += $subtotal;
                         ?>
                             <form class="payment-item" action="" method="POST">
