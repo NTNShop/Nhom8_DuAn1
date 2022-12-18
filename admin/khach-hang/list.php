@@ -117,15 +117,15 @@
 <body>
     <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
         <div class="row title">
-            <h1>List</h1>
+            <h1>Danh sách</h1>
         </div>
         <ul class="user_item row-heading">
-            <li>Username</li>
-            <li class="ho-ten">Name</li>
-            <li class="user-image">Image</li>
+            <li>Tên đăng nhập</li>
+            <li class="ho-ten">Tên</li>
+            <li class="user-image">Avatar</li>
             <li class="email">Email</li>
-            <li class="vai-tro">Role</li>
-            <li class="kich-hoat">Activate</li>
+            <li class="vai-tro">Vai trò</li>
+            <li class="kich-hoat">Hoạt động</li>
             <li class="action"></li>
             <li class="action"></li>
         </ul>

@@ -40,7 +40,7 @@
                     <div class="col-3 cart__head-quantity">
                         <p>
                             <input type="number" name="quantity" class="quantityIn pqty product-qty" value='<?php echo $sp['quantity'] ?>' />
-                            <button class="delete-prod" type="submit" name="updateqty">update</button>
+                            <!-- <button class="delete-prod" type="submit" name="updateqty">update</button> -->
                         </p>
                     </div>
                     <div class="col-3 cart__head-price">
@@ -63,7 +63,7 @@
         <article class="row cart__foot">
             <div class="col-6 col-lg-6 col-sm-6 cart__foot-update">
 
-                <button class="cart__foot-update-btn">Cập nhật giỏ hàng</button>
+                <button class="cart__foot-update-btn"></button>
             </div>
 
             <p class="col-3 col-lg-3 col-sm-3 cart__foot-total">

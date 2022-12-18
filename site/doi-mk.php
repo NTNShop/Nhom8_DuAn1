@@ -17,6 +17,11 @@
         border-radius: 4px;
         border: 1px solid white;
     }
+    .kichthuoc{
+        position: absolute;
+        left: 170px;
+        
+    }
 </style>
 <?php
 // require '../../pdo.php';
@@ -71,20 +76,20 @@ if (exist_param("btn_change")) {
     </div>
     <form class="change-password-form" action="" method="post">
         <div class="form-group">
-            <label for="">Username:</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-            <input name="ma_kh">
+            <label for="">Tên đăng nhập:</label>
+            <input class="kichthuoc" name="ma_kh">
         </div>
         <div class="form-group">
-            <label for="">Password:</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-            <input name="mat_khau" type="password">
+            <label for="">Mật khẩu:</label>
+            <input class="kichthuoc" name="mat_khau" type="password">
         </div>
         <div class="form-group">
-            <label for="">New Password:</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-            <input name="mat_khau2" type="password">
+            <label for="">Mật khẩu mới:</label>
+            <input  class="kichthuoc"name="mat_khau2" type="password">
         </div>
         <div class="form-group">
-            <label for="">Confirm New Password:</label>
-            <input name="mat_khau3" type="password">
+            <label for="">Xác nhận mật khẩu mới:</label>
+            <input class="kichthuoc" name="mat_khau3" type="password">
         </div>
         <div class="form-group">
             <button name="btn_change">Change</button>

@@ -17,6 +17,15 @@
         border-radius: 4px;
         border: 1px solid white;
     }
+    .avatar{
+        width: 10%;
+       
+    }
+    .kichthuoc{
+        position: absolute;
+        left: 120px;
+        
+    }
 </style>
 <?php 
 // require '../../pdo.php';
@@ -66,20 +75,20 @@ extract($_SESSION['user']) ?>
             <img src="<?= $IMAGE_DIR ?>/users/<?= $hinh ?>">
         </div>
         <div class="form-group">
-            <label for="">Username:</label>
-            <input name="ma_kh" value="<?= $ma_kh ?>" readonly>
+            <label for="">Tên đăng nhập:</label>
+            <input class="kichthuoc" name="ma_kh" value="<?= $ma_kh ?>" readonly>
         </div>
         <div class="form-group">
-            <label for="">Name:</label> &ensp;&ensp;
-            <input name="ho_ten" value="<?= $ho_ten ?>">
+            <label for="">Tên:</label>
+            <input class="kichthuoc" name="ho_ten" value="<?= $ho_ten ?>">
         </div>
         <div class="form-group">
-            <label for="">Email:</label>&ensp;&ensp;&ensp;
-            <input type="email" name="email" value="<?= $email ?>">
+            <label for="">Email:</label>
+            <input class="kichthuoc" type="email" name="email" value="<?= $email ?>">
         </div>
         <div class="form-group">
             <label for="">Avatar</label>
-            <input name="up_hinh" type="file">
+            <input class="kichthuoc" name="up_hinh" type="file">
         </div>
         <div class="form-group">
             <button name="btn_update">Cập nhật</button>

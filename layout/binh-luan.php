@@ -21,7 +21,7 @@ if (!isset($_SESSION['user'])) {
 } else {
 ?>
     <form class="binh_luan" action="index.php?chitiet-sanpham&ma_hh=<?= $ma_hh ?>" method="post">
-        <input class="gui" name="noi_dung" placeholder="    write a comment" /><button class="send">Gửi</button>
+        <input class="gui" name="noi_dung" placeholder="  Bình luận" /><button class="send">Gửi</button>
     </form>
 <?php } ?>
 <style>

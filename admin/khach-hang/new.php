@@ -49,6 +49,20 @@
             color: white;
             border: 1px solid white;
         }
+        .kichthuoc{
+        position: absolute;
+        left: 120px;
+        
+    }
+    .kichthuoc2{
+        position: absolute;
+        left: 120px;
+        top: 180px;
+    }
+    .vaitro{
+        position: relative;
+        left: 70px;
+    }
     </style>
 </head>
 
@@ -57,50 +71,51 @@
         <div class="row">
             <form action="?khach-hang&btn_insert" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="">Username:</label>
-                    <input type="text" name="ma_kh">
+                    <label for="">Tên đăng nhập:</label>
+                    <input class="kichthuoc" type="text" name="ma_kh">
                 </div>
                 <div class="form-group">
-                    <label for="">Name:</label> &ensp;&ensp;&ensp;&ensp;
-                    <input type="text" name="ho_ten">
+                    <label for="">Tên:</label> 
+                    <input class="kichthuoc" type="text" name="ho_ten">
                 </div>
                 <div class="form-group">
-                    <label for="">Password:</label> 
-                      <input type="text" name="mat_khau">
-                </div>
-
-                <div class="form-group">
-                    <label for="">Image:</label>
-                    <input type="file" name="hinh">
-                </div>
-                <div class="form-group">
-                    <label for="">Email:</label> &ensp;&ensp;&ensp;&ensp;
-                    <input type="email" name="email" />
+                    <label for="">Mật khẩu:</label> 
+                      <input class="kichthuoc" type="text" name="mat_khau">
                 </div>
 
                 <div class="form-group">
-                    <label for="">Position:</label>
+                    <label for="">Avatar:</label>
+                    <input class="kichthuoc" type="file" name="hinh"> 
+                </div>
+                <br><br><br>
+                <div class="form-group">
+                    <label for="">Email:</label> 
+                    <input class="kichthuoc2" type="email" name="email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="">Vai trò:</label>
                     <div class="vai-tro-form">
                         <div>
                             <input type="radio" name="vai_tro" value="1">
-                            <label for="">Admin</label>
+                            <label class="vaitro" for="">Admin</label>
                         </div>
                         <div>
                             <input type="radio" name="vai_tro" value="0">
-                            <label for="">Customer</label>
+                            <label class="vaitro" for="">Người dùng</label>
                         </div>
                     </div>
 
                 </div>
                 <div class="form-group">
-                    <label for="">Active</label>
+                    <label for="">Hoạt động</label>
                     <select name="kich_hoat" id="">
-                        <option value="1" selected>Active</option>
-                        <option value="0">Unactive</option>
+                        <option value="1" selected>Hoạt động</option>
+                        <option value="0">không hoạt động</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="add" name="btn_insert">Add</button>
+                    <button type="submit" class="add" name="btn_insert">Thêm</button>
                 </div>
             </form>
         </div>

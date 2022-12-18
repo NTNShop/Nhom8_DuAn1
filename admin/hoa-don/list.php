@@ -78,6 +78,7 @@
             list-style: disc; 
         }
         .products{
+            width: 150px;
             position: relative;
             left: 30px;
         }
@@ -90,6 +91,18 @@
             left: 100px;
             list-style: none;   
         }
+        .status{
+            position: relative;
+            left: 450px;
+        }
+        .action{
+            position: relative;
+            left: 450px;
+        }
+        .total{
+            position: relative;
+            left: 320px;
+        }
     </style>
 </head>
 
@@ -97,15 +110,15 @@
     <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 
         <div class="row title">
-            <h1>Receipt</h1>
+            <h1>Quản lý hóa đơn</h1>
         </div>
         <div class="row prod-list">
             <ul class="prod_item row-heading">
                 <li class="heading">ID</li>
-                <li class="heading">USER</li>
-                <li class="heading">Products</li>
-                <li class="heading">Total</li>
-                <li class="heading">Status</li>
+                <li class="heading">Người dùng</li>
+                <li class="heading">Sản phẩm</li>
+                <li class="heading">Tổng</li>
+                <li class="heading">Trạng thái</li>
                 <li class="heading"></li>
             </ul>
             <?php
@@ -146,7 +159,7 @@
                                                 <div class="qty">
 
                                                 <p class="subtotal">
-                                                        $<?= $x['don_gia'] ?>
+                                                        <?= $x['don_gia'] ?>đ
                                                     </p>
                                                     <span class="total_sl">
                                                         x<?= $x['so_luong'] ?>
@@ -161,15 +174,15 @@
                                 <?php endforeach ?>
                             </ul>
                         </li>
-                        <!-- <li class="total">$<?= $total ?></li> -->
-                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;   &emsp;&emsp;&emsp;  
+                        <li class="total"><?= $total ?>đ</li>
+                        
                         <li class="status">
                             <select name="trang_thai" id="">
                                 <option value="0" <?php echo ($trang_thai == 0) ? "selected" : "" ?>>Chưa Xác Nhận</option>
                                 <option value="1" <?php echo ($trang_thai == 1) ? "selected" : "" ?>>Đang xử lý</option>
-                                <option value="2" <?php echo ($trang_thai == 2) ? "selected" : "" ?>>Delivery</option>
-                                <option value="3" <?php echo ($trang_thai == 3) ? "selected" : "" ?>>Finished</option>
-                                <option value="4" <?php echo ($trang_thai == 4) ? "selected" : "" ?>>Cancel</option>
+                                <option value="2" <?php echo ($trang_thai == 2) ? "selected" : "" ?>>Đang vận chuyển</option>
+                                <option value="3" <?php echo ($trang_thai == 3) ? "selected" : "" ?>>Đã giao</option>
+                                <option value="4" <?php echo ($trang_thai == 4) ? "selected" : "" ?>>Hủy bỏ</option>
                             </select>
                         </li>
                         <li class="action"><a href=""><i class="fa-regular fa-trash-can"></i></a></li>

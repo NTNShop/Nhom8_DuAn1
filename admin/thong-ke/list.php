@@ -4,24 +4,24 @@
 <div class="activity">
     <div class="title">
         <i class="uil uil-clock-three"></i>
-        <span class="text">Statistical</span>
+        <span class="text">Thống kê</span>
     </div>
 
     <div class="activity-data">
         <div class="data names">
-            <span class="data-title">Categories</span>
+            <span class="data-title">Loại</span>
         </div>
         <div class="data email">
-            <span class="data-title">Total Products</span>
+            <span class="data-title">Tổng số sản phẩm</span>
         </div>
         <div class="data joined">
-            <span class="data-title">Highest price</span>
+            <span class="data-title">Giá cao nhất</span>
         </div>
         <div class="data type">
-            <span class="data-title">Lowest price</span>
+            <span class="data-title">Giá thấp nhất</span>
         </div>
         <div class="data status">
-            <span class="data-title">Average price</span>
+            <span class="data-title">Giá trung bình</span>
         </div>
     </div>
     <?php

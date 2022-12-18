@@ -10,7 +10,7 @@ require_once "../dao/thong-ke.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thống kê</title>
     <link href="css/admin.css" rel="stylesheet">
 </head>
 
@@ -19,30 +19,30 @@ require_once "../dao/thong-ke.php";
         <div class="overview">
             <div class="title">
                 <i class="uil uil-tachometer-fast-alt"></i>
-                <span class="text">Dashboard</span>
+                <span class="text">Bảng điều khiển</span>
             </div>
 
             <div class="boxes">
                 <div class="box box1">
-                    <span class="text">Product</span>
+                    <span class="text">Sản phẩm</span>
                     <span class="number">
                         <?php echo thong_ke_hang_hoa() ?>
                     </span>
                 </div>
                 <div class="box box2">
-                    <span class="text">Cate</span>
+                    <span class="text">Loại</span>
                     <span class="number"><?php echo thong_ke_loai() ?></span>
                 </div>
                 <div class="box box3">
-                    <span class="text">Comments</span>
+                    <span class="text">Bình luận</span>
                     <span class="number"><?php echo thong_ke_binh_luan() ?></span>
                 </div>
                 <div class="box box4">
-                    <span class="text">Customer</span>
+                    <span class="text">Người dùng</span>
                     <span class="number"><?php echo thong_ke_khach_hang() ?></span>
                 </div>
                 <div class="box box5">
-                    <span class="text">Receipt</span>
+                    <span class="text">Biên lai</span>
                     <span class="number"><?php echo thong_ke_don_hang() ?></span>
                 </div>
             </div>

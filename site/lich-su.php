@@ -14,12 +14,12 @@ if ($listBill == null) {
 <!-- CONTENT -->
 <div class="container cart-content">
 
-    <h4 class="my-4">History</h4>
+    <h4 class="my-4">Lịch sử</h4>
 
     <?php foreach ($listBill as $bill) : ?>
         <div class="safe-area my-4">
             <div class="row bill">
-                <h5>Receipt Details</h5>
+                <h5>Chi tiết đơn hàng</h5>
                 <br>
                 <!-- info -->
                 <div class="table-responsive-md col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -31,28 +31,28 @@ if ($listBill == null) {
                                 <td><?= $bill['ma_hd'] ?></td>
                             </tr>
                             <tr>
-                                <td>Username:</td>
+                                <td>Tên:</td>
                                 <td><?= $bill['ho_ten'] ?></td>
                             </tr>
                             <tr>
-                                <td>Phone:</td>
+                                <td>Số điện thoại:</td>
                                 <td><?= $bill['so_dien_thoai'] ?></td>
                             </tr>
                             <tr>
-                                <td>Address:</td>
+                                <td>Địa chỉ:</td>
                                 <td><?= $bill['dia_chi'] ?></td>
                             </tr>
                             <tr>
-                                <td>Note:</td>
+                                <td>Ghi chú:</td>
                                 <td><?= $bill['ghi_chu'] ?></td>
                             </tr>
                             <tr>
-                                <td>Order date:</td>
+                                <td>Ngày đặt hàng:</td>
                                 <td><?= $bill['ngay_tao'] ?></td>
                             </tr>
                             <tr>
-                                <td>Total:</td>
-                                <td>$<?= number_format($bill['total'], 2) ?></td>
+                                <td>Tổng:</td>
+                                <td><?= number_format($bill['total'], 2) ?>đ</td>
                             </tr>
                         </tbody>
                     </table>
@@ -65,10 +65,10 @@ if ($listBill == null) {
                         <table class="table table-centered" id="btn-editable">
                             <thead>
                                 <tr>
-                                    <th>Product Name</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
-                                    <th>Total</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Giá</th>
+                                    <th>Tổng</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -80,8 +80,8 @@ if ($listBill == null) {
                                     <tr>
                                         <td><a style="text-decoration: none;" href="?chitiet-sanpham&ma_hh=<?= $x["ma_hh"] ?>" target="_blank" rel="noopener noreferrer"><?= $x['ten_hh'] ?></a></td>
                                         <td><?= $x['so_luong'] ?></td>
-                                        <td>$<?= number_format($x['don_gia'], 2) ?></td>
-                                        <td>$<?= number_format($x['don_gia'] * $x['so_luong'], 2) ?></td>
+                                        <td><?= number_format($x['don_gia'], 2) ?>đ</td>
+                                        <td><?= number_format($x['don_gia'] * $x['so_luong'], 2) ?>đ</td>
                                     </tr>
                                 <?php endforeach ?>
                             </tbody>

@@ -4,7 +4,7 @@
 
         <div class="payment-right">
             <div class="payment-details">
-                <h3 class="payment-title">Payment Details</h3>
+                <h3 class="payment-title">Chi tiết thanh toán</h3>
                 <div class="payment-list">
                     <div class="row">
                         <?php
@@ -26,14 +26,14 @@
                                     <div class="payment-info">
                                         <p class="itemNumber"><?php echo $sp['ma_hh']; ?></p>
                                         <h3><?php echo $sp['ten_hh']; ?></h3>
-                                        <div class="size">SIZE: <span><?php echo (isset($sp['size']) ? $sp['size'] : ''); ?></span></div>
+                                        
                                         <p>
-                                            <span>Quantity:
+                                            <span>Số lượng:
                                                 <?php echo $sp['quantity'] ?>
                                             </span>
-                                            x $<?php echo $sp['don_gia']; ?>
+                                            x <?php echo $sp['don_gia']; ?>đ
                                         </p>
-                                        <p>$<?php echo $subtotal; ?></p>
+                                        <!-- <p><?php echo $subtotal; ?>đ</p> -->
                                     </div>
                                 </div>
                             </form>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <div class="payment-sumary">
+            <!-- <div class="payment-sumary">
                 <h3>ORDER SUMARY</h3>
                 <div class="subtotal">
                     <span>Subtotal</span>
@@ -60,7 +60,7 @@
                     <p>
                         $<?php echo $total ?></p>
                 </div>
-            </div>
+            </div> -->
 
         </div>
         <div class="payment-left">
