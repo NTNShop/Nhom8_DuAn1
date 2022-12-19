@@ -1,3 +1,17 @@
+<style>
+    #update{
+        width: 80px;
+        background-color: orangered;
+        border: 1px solid white;
+        color: white;
+        
+
+    }
+    #update:hover{
+        border: 1px solid black;
+        font-weight: bold;
+    }
+</style>
 <section class="cart">
     <div class="container">
         <article class="row cart__head pc">
@@ -40,7 +54,7 @@
                     <div class="col-3 cart__head-quantity">
                         <p>
                             <input type="number" name="quantity" class="quantityIn pqty product-qty" value='<?php echo $sp['quantity'] ?>' />
-                            <!-- <button class="delete-prod" type="submit" name="updateqty">update</button> -->
+                            <button id="update" class="delete-prod" type="submit" name="updateqty">Update</button>
                         </p>
                     </div>
                     <div class="col-3 cart__head-price">
