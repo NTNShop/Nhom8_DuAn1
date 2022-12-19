@@ -82,13 +82,13 @@
                             <a class="contact__self-link" href="#">EduBook.com</a>
                         </li>
                         <li class="contact__self-item">
-                            <a class="contact__self-link" href="#">SĐT: 0393.078.242</a>
+                            <a class="contact__self-link" href="#">SĐT: 0942785922</a>
                         </li>
                         <li class="contact__self-item">
-                            <a class="contact__self-link" href="#">Email: EduBook2001@gmail.com</a>
+                            <a class="contact__self-link" href="#">Email: nhanntpc03225@fpt.edu.vn</a>
                         </li>
                         <li class="contact__self-item">
-                            <a class="contact__self-link" href="#">Địa chỉ: Số 3A, Tạ Quang Bử, Hai Bà Trưng, Hà Nội</a>
+                            <a class="contact__self-link" href="#">Địa chỉ: Cẩn thơ</a>
                         </li>
                     </ul>
                 </div>

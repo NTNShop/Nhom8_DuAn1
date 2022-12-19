@@ -145,7 +145,7 @@
                     </div>
                 </article>
                 <article class="row posts__view">
-                    <a href="post.php" class="posts__view-btn">Xem thêm</a>
+                    <a href="?post" class="posts__view-btn">Xem thêm</a>
                 </article>
             </div>
         </section>
